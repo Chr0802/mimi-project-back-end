@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{#    动态加载数据，每次捕获request里面的page和limit参数，每次翻页请求数据库查询对应的页面#}
+    <table id="demo" lay-filter="test"></table>
+
+{% endblock content %}
+
+{% block script %}
+    layui.use('table', function(){
+      var table = layui.table;
+
+      //第一个实例
+      table.render({
+        elem: '#demo'
+        ,height: 615
+        ,url: 'http://127.0.0.1:8000/chaxunjiekou/?wd=华为' //数据接口
+{#        ,limit: 20#}
+{#        ,page: true //开启分页#}
+        ,request: {}
+        ,cols: [[ //表头
+            {field: 'E_EID', title: '工商库企业代码', width:80}
+          ,{field: 'E_ENAME', title: '企业名称', width:200}
+          ,{field: 'E_STATUS', title: '经营状态', width:80}
+          ,{field: 'E_REPNAME', title: '法定代表人姓名', width:80}
+          ,{field: 'E_SDATE', title: '注册日期', width: 100}
+          ,{field: 'E_OSDATE', title: '工商注册号', width: 100}
+          ,{field: 'E_REGID', title: '经营状态', width: 100}
+          ,{field: 'E_CAPAMT', title: '组织机构代码', width: 100}
+          ,{field: 'E_SCOPE', title: '经营范围', width:100}
+          ,{field: 'E_REGDEPT', title: '企业注册类型', width:100}
+          ,{field: 'E_CATEGORY', title: '类别', width:100}
+          ,{field: 'E_LOCID', title: '区划代码', width:100}
+          ,{field: 'E_PROV', title: '省份缩写', width: 100}
+          ,{field: 'E_PROVID', title: '省份邮编', width: 100}
+          ,{field: 'E_CITY', title: '城市名称', width: 100}
+          ,{field: 'E_REGID_ORIG', title: '注册地编码', width: 100}
+        ]]
+      });
+
+    });
+{% endblock script %}

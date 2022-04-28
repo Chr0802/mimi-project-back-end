@@ -1,0 +1,101 @@
+{#{% extends 'base.html' %}#}
+{#  {% load static %}#}
+{#{% block content %}#}
+{#<div id="main" style="width: 600px;height:400px;" class="layui-tab-item layui-show"></div>#}
+{#    <div class="layui-card">#}
+{#      <div class="layui-card-header"></div>#}
+{#      <div class="layui-card-body ">#}
+{#        <img data-v-486e40cc="" src="{% static 'img/pic6.png' %}" class="cover" style="width: 99%;">#}
+{#      </div>#}
+{##}
+{#    </div>#}
+{#{% endblock content %}#}
+{##}
+{##}
+{#{% block script %}#}
+{#{% endblock script %}#}
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <style type="text/css">
+     .center-in-center{ position: absolute; top: 50%; left: 20%; transform: translate(0, -50%); }
+     .high-in-center{ position: absolute; top: 1%; left: 20%; transform: translate(0, -30%); }
+    </style>
+
+    <form class="layui-form" action="">
+      <div class="layui-form-item center-in-center" style="width: 80%">
+{#        <label class="layui-form-label">输入框</label>#}
+        <div class="layui-row"> <h1 style="margin-left: 25%;">工商注册企业查询</h1></div>
+          <br /><br />
+        <div class="layui-input-block" style="display: inline-block;width:60%;margin-left: 0px">
+            <input type="text" name="wd" required  lay-verify="required" placeholder="请输入公司名" autocomplete="off" class="layui-input" >
+        </div>
+        <div class="layui-input-block" style="display: inline-block">
+          <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+          <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+      </div>
+    </form>
+    <table id="demo" lay-filter="test"></table>
+
+{% endblock content %}
+
+
+
+{% block script %}
+
+layui.use('table',res=>{
+    console.log(layui.table)
+    });
+
+
+    //Demo
+layui.use('form', function(){
+  var form = layui.form;
+
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+{#    console.log(data)#}
+{#    setTimeout(()=>{#}
+{#    console.log('timeout')#}
+{#    },2000)#}
+    let $ = layui.jquery;
+    $.get('/?wd=' + data.field.wd, (res)=>{
+
+        let table = layui.table;
+        table.render({
+        elem: '#demo'
+        ,height: 810,
+        data:res.data,
+        url: '/chaxunjiekou?wd=' + data.field.wd //数据接口
+    {#        ,limit: 20#}
+    {#        ,page: true //开启分页#}
+        ,request: {}
+        ,cols: [[ //表头
+            {field: 'E_EID', title: '工商库企业代码', width:80}
+          ,{field: 'E_ENAME', title: '企业名称', width:200}
+          ,{field: 'E_STATUS', title: '经营状态', width:80}
+          ,{field: 'E_REPNAME', title: '法定代表人姓名', width:80}
+          ,{field: 'E_SDATE', title: '注册日期', width: 100}
+          ,{field: 'E_OSDATE', title: '经营开始日期', width: 100}
+          ,{field: 'E_REGID', title: '工商注册号', width: 100}
+          ,{field: 'E_CAPAMT', title: '注册资本金额', width: 100}
+          ,{field: 'E_SCOPE', title: '经营范围', width:100}
+          ,{field: 'E_REGDEPT', title: '注册机关', width:100}
+          ,{field: 'E_CATEGORY', title: '类别', width:100}
+          ,{field: 'E_LOCID', title: '区划代码', width:100}
+          ,{field: 'E_PROV', title: '省份缩写', width: 100}
+          ,{field: 'E_PROVID', title: '省份邮编', width: 100}
+          ,{field: 'E_CITY', title: '城市名称', width: 100}
+          ,{field: 'E_REGID_ORIG', title: '注册地编码', width: 100}
+        ]]
+      });
+        });
+    return false;
+  });
+});
+
+
+{% endblock script %}

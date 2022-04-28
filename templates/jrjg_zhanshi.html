@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<table lay-filter="demo">
+{#   用Django实现的翻页，但是没有页面跳转#}
+  <thead>
+
+    <tr>
+      <th lay-data="{field:'year', width:80}">年限</th>
+      <th lay-data="{field:'code', width:100}">银行类型</th>
+      <th lay-data="{field:'B_SNAME', width:150}">银行简称</th>
+        <th lay-data="{field:'B_ENAME', width:250}">银行全称</th>
+      <th lay-data="{field:'B_HANME', width:200}">银行股东名称</th>
+      <th lay-data="{field:'B_HSHARE', width:100}">持股比例</th>
+        <th lay-data="{field:'E_EID', width:200}">工商库企业代码</th>
+      <th lay-data="{field:'H_HID'}">股东工商库代码</th>
+    </tr>
+
+  </thead>
+  <tbody>
+    {% for p in pages.object_list %}
+    <tr>
+      <td>{{ p.year }}</td>
+      <td>{{ p.code }}</td>
+      <td>{{ p.B_SNAME }}</td>
+      <td>{{ p.B_ENAME }}</td>
+      <td>{{ p.B_HNAME }}</td>
+      <td>{{ p.B_HSHARE }}</td>
+      <td>{{ p.E_EID }}</td>
+      <td>{{ p.H_HID }}</td>
+    </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+{#  <tbody>#}
+{#    {% for p in pages.object_list %}#}
+{#    <div class="item">#}
+{#        <div class="text">#}
+{#          <p>#}
+{#              <span>{{ p.year }}</span>#}
+{#              <span>{{ p.code }}</span>#}
+{#              <span>{{ p.B_SNAME }}</span>#}
+{#              <span>{{ p.B_ENAME }}</span>#}
+{#              <span>{{ p.B_HNAME }}</span>#}
+{#              <span>{{ p.B_HSHARE }}</span>#}
+{#              <span>{{ p.E_EID }}</span>#}
+{#              <span>{{ p.H_HID }}</span>#}
+{#          </p>#}
+{#        </div>#}
+{#      </div>#}
+{#      {% endfor %}#}
+{#  </tbody>#}
+
+  <div id="demo0" style="text-align: center;">
+        <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+            {% if pages.has_previous %}
+                <a href="{% url 'index:jrjg' %}?t={{ t }}&n={{ n }}&p={{ pages.previous_page_number }}" class="layui-laypage-prev">上一页</a>
+            {% endif %}
+
+            {% for page in pages.paginator.page_range %}
+                {% if pages.number == page %}
+                    <span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>{{ page }}</em></span>
+                {% elif pages.number|add:'-1' == page or pages.number|add:'1' == page %}
+                    <a href="{% url 'index:jrjg' %}?t={{ t }}&n={{ n }}&p={{ page }}">{{ page }}</a>
+                {% endif %}
+            {% endfor %}
+
+            {% if pages.has_next %}
+                <a href="{% url 'index:jrjg' %}?t={{ t }}&n={{ n }}&p={{ pages.next_page_number }}" class="layui-laypage-next">下一页</a>
+            {% endif %}
+        </div>
+  </div>
+{% endblock content %}
+  
+{% block script %}
+    layui.use('table', function(){
+    var table = layui.table;
+    //转换静态表格
+    table.init('demo', {
+      height: 580 //设置高度
+      ,limit: 20 //注意：请务必确保 limit 参数（默认：10）是与你服务端限定的数据条数一致
+{#      ,page: true //开启分页#}
+      //支持所有基础参数
+    });
+    });
+{% endblock script %}

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{#<div id="main" style="width: 600px;height:700px;" class="layui-tab-item layui-show"></div>#}
+
+
+    <div>
+        <div class="layui-card" style="width: 24%;height:700px; display: inline-block">
+          <div class="layui-card-header layui-bg-gray">核废水</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/核废水.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">新冠肺炎</div>
+          <div class="layui-card-body layui-bg-gray">
+              <img data-v-486e40cc="" src="{% static 'img/新冠肺炎.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">军事</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/军事.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+        </div>
+
+        <div class="layui-card" style="width: 24%;height:700px; display: inline-block">
+          <div class="layui-card-header layui-bg-gray">新疆棉花</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/新疆棉花.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">国际消费者权益日</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/国际消费者权益日.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">中美会谈</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/中美会谈.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+        </div>
+
+        <div class="layui-card" style="width: 24%;height:700px; display: inline-block">
+          <div class="layui-card-header layui-bg-gray">拜登</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/拜登.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">东京奥运会</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/东京奥运会.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">联合国</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/联合国.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+        </div>
+
+        <div class="layui-card" style="width: 24%;height:700px; display: inline-block">
+          <div class="layui-card-header layui-bg-gray">无人机</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/无人机.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">新冠疫苗</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/新冠疫苗.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+          <div class="layui-card-header layui-bg-gray">苏伊士运河</div>
+          <div class="layui-card-body layui-bg-gray">
+            <img data-v-486e40cc="" src="{% static 'img/苏伊士运河.png' %}" class="cover" style="width: 99%;">
+          </div>
+            <br />
+    </div>
+{% endblock content %}
+
+
+{% block script %}
+ // 基于准备好的dom，初始化echarts实例
+    var i = document.getElementById('main')
+    console.log(i)
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'ECharts 入门示例'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+{% endblock script %}

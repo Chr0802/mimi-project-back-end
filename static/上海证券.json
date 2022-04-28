@@ -1,0 +1,4192 @@
+{
+    "categories": {
+        "company": "公司",
+        "company1": "1层持股公司",
+        "company2": "2层持股公司",
+        "company3": "3层持股公司",
+        "company4": "4层持股公司",
+        "company5": "5层持股公司"
+    },
+    "data": {
+        "nodes": [
+            {
+                "label": "上海证券交易所",
+                "value": 20,
+                "id": 1,
+                "categories": [
+                    "company"
+                ],
+                "info": "上海证券交易所"
+            },
+            {
+                "label": "华宝信托有限责任公司",
+                "value": 10,
+                "id": 2,
+                "categories": [
+                    "company1"
+                ],
+                "info": "华宝信托有限责任公司"
+            },
+            {
+                "label": "浙江省舟山市财政局",
+                "value": 10,
+                "id": 3,
+                "categories": [
+                    "company2"
+                ],
+                "info": "浙江省舟山市财政局"
+            },
+            {
+                "label": "中国宝武钢铁集团有限公司",
+                "value": 10,
+                "id": 4,
+                "categories": [
+                    "company2"
+                ],
+                "info": "中国宝武钢铁集团有限公司"
+            },
+            {
+                "label": "国务院国有资产监督管理委员会",
+                "value": 10,
+                "id": 5,
+                "categories": [
+                    "company3"
+                ],
+                "info": "国务院国有资产监督管理委员会"
+            },
+            {
+                "label": "申万宏源集团股份有限公司",
+                "value": 10,
+                "id": 6,
+                "categories": [
+                    "company1"
+                ],
+                "info": "申万宏源集团股份有限公司"
+            },
+            {
+                "label": "中国工商银行",
+                "value": 10,
+                "id": 7,
+                "categories": [
+                    "company2"
+                ],
+                "info": "中国工商银行"
+            },
+            {
+                "label": "上海久事（集团）有限公司",
+                "value": 10,
+                "id": 8,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海久事（集团）有限公司"
+            },
+            {
+                "label": "上海市国有资产监督管理委员会",
+                "value": 10,
+                "id": 9,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海市国有资产监督管理委员会"
+            },
+            {
+                "label": "上海国际信托投资公司",
+                "value": 10,
+                "id": 10,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海国际信托投资公司"
+            },
+            {
+                "label": "上海市财政局",
+                "value": 10,
+                "id": 11,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海市财政局"
+            },
+            {
+                "label": "上海浦东发展银行",
+                "value": 10,
+                "id": 12,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海浦东发展银行"
+            },
+            {
+                "label": "国泰君安证券股份有限公司",
+                "value": 10,
+                "id": 13,
+                "categories": [
+                    "company1"
+                ],
+                "info": "国泰君安证券股份有限公司"
+            },
+            {
+                "label": "深圳市投资控股有限公司",
+                "value": 10,
+                "id": 14,
+                "categories": [
+                    "company2"
+                ],
+                "info": "深圳市投资控股有限公司"
+            },
+            {
+                "label": "深圳市人民政府国有资产监督管理委员会",
+                "value": 10,
+                "id": 15,
+                "categories": [
+                    "company3"
+                ],
+                "info": "深圳市人民政府国有资产监督管理委员会"
+            },
+            {
+                "label": "上海国有资产经营有限公司",
+                "value": 10,
+                "id": 16,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海国有资产经营有限公司"
+            },
+            {
+                "label": "上海国际集团有限公司",
+                "value": 10,
+                "id": 17,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海国际集团有限公司"
+            },
+            {
+                "label": "深圳能源集团股份有限公司",
+                "value": 10,
+                "id": 18,
+                "categories": [
+                    "company2"
+                ],
+                "info": "深圳能源集团股份有限公司"
+            },
+            {
+                "label": "限售流通股",
+                "value": 10,
+                "id": 19,
+                "categories": [
+                    "company3"
+                ],
+                "info": "限售流通股"
+            },
+            {
+                "label": "无限售条件的流通股",
+                "value": 10,
+                "id": 20,
+                "categories": [
+                    "company3"
+                ],
+                "info": "无限售条件的流通股"
+            },
+            {
+                "label": "上海城投（集团）有限公司",
+                "value": 10,
+                "id": 21,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海城投（集团）有限公司"
+            },
+            {
+                "label": "上海市国资委",
+                "value": 10,
+                "id": 22,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海市国资委"
+            },
+            {
+                "label": "无限售条件股份",
+                "value": 10,
+                "id": 23,
+                "categories": [
+                    "company3"
+                ],
+                "info": "无限售条件股份"
+            },
+            {
+                "label": "有限售条件股份",
+                "value": 10,
+                "id": 24,
+                "categories": [
+                    "company3"
+                ],
+                "info": "有限售条件股份"
+            },
+            {
+                "label": "香港中央结算(代理人)有限公司",
+                "value": 10,
+                "id": 25,
+                "categories": [
+                    "company2"
+                ],
+                "info": "香港中央结算(代理人)有限公司"
+            },
+            {
+                "label": "全国社会保障基金理事会转持二户",
+                "value": 10,
+                "id": 26,
+                "categories": [
+                    "company2"
+                ],
+                "info": "全国社会保障基金理事会转持二户"
+            },
+            {
+                "label": "大众交通（集团）股份有限公司",
+                "value": 10,
+                "id": 27,
+                "categories": [
+                    "company2"
+                ],
+                "info": "大众交通（集团）股份有限公司"
+            },
+            {
+                "label": "境内上市人民币普通股（A股）",
+                "value": 10,
+                "id": 28,
+                "categories": [
+                    "company3"
+                ],
+                "info": "境内上市人民币普通股（A股）"
+            },
+            {
+                "label": "境内上市外资股（B股）",
+                "value": 10,
+                "id": 29,
+                "categories": [
+                    "company3"
+                ],
+                "info": "境内上市外资股（B股）"
+            },
+            {
+                "label": "上海金融发展投资基金(有限合伙)",
+                "value": 10,
+                "id": 30,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海金融发展投资基金(有限合伙)"
+            },
+            {
+                "label": "中国证券金融股份有限公司",
+                "value": 10,
+                "id": 31,
+                "categories": [
+                    "company2"
+                ],
+                "info": "中国证券金融股份有限公司"
+            },
+            {
+                "label": "上海国际信托有限公司",
+                "value": 10,
+                "id": 32,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海国际信托有限公司"
+            },
+            {
+                "label": "上海新黄浦置业股份有限公司",
+                "value": 10,
+                "id": 33,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海新黄浦置业股份有限公司"
+            },
+            {
+                "label": "上海汽车集团股权投资有限公司",
+                "value": 10,
+                "id": 34,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海汽车集团股权投资有限公司"
+            },
+            {
+                "label": "上海浦东发展银行股份有限公司",
+                "value": 10,
+                "id": 35,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海浦东发展银行股份有限公司"
+            },
+            {
+                "label": "上海市原材料开发投资公司",
+                "value": 10,
+                "id": 36,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海市原材料开发投资公司"
+            },
+            {
+                "label": "上海金叠经贸有限公司",
+                "value": 10,
+                "id": 37,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海金叠经贸有限公司"
+            },
+            {
+                "label": "上海城建市政工程（集团）有限公司",
+                "value": 10,
+                "id": 38,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海城建市政工程（集团）有限公司"
+            },
+            {
+                "label": "上海市外高桥保税区开发（控股）公司",
+                "value": 10,
+                "id": 39,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海市外高桥保税区开发（控股）公司"
+            },
+            {
+                "label": "上海陆家嘴（集团）有限公司",
+                "value": 10,
+                "id": 40,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海陆家嘴（集团）有限公司"
+            },
+            {
+                "label": "上海浦东康桥（集团）有限公司",
+                "value": 10,
+                "id": 41,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海浦东康桥（集团）有限公司"
+            },
+            {
+                "label": "上海市金桥出口加工区开发公司",
+                "value": 10,
+                "id": 42,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海市金桥出口加工区开发公司"
+            },
+            {
+                "label": "上海市浦东新区房地产（集团）有限公司",
+                "value": 10,
+                "id": 43,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海市浦东新区房地产（集团）有限公司"
+            },
+            {
+                "label": "国网上海市电力公司",
+                "value": 10,
+                "id": 44,
+                "categories": [
+                    "company4"
+                ],
+                "info": "国网上海市电力公司"
+            },
+            {
+                "label": "上海友谊（集团）有限公司",
+                "value": 10,
+                "id": 45,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海友谊（集团）有限公司"
+            },
+            {
+                "label": "上海新金穗实业（集团）股份有限公司",
+                "value": 10,
+                "id": 46,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海新金穗实业（集团）股份有限公司"
+            },
+            {
+                "label": "上海中闻事业发展有限公司",
+                "value": 10,
+                "id": 47,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海中闻事业发展有限公司"
+            },
+            {
+                "label": "上海亚通股份有限公司",
+                "value": 10,
+                "id": 48,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海亚通股份有限公司"
+            },
+            {
+                "label": "上海众和置业有限公司",
+                "value": 10,
+                "id": 49,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海众和置业有限公司"
+            },
+            {
+                "label": "上海陆家嘴房产开发有限公司",
+                "value": 10,
+                "id": 50,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海陆家嘴房产开发有限公司"
+            },
+            {
+                "label": "光明房地产集团股份有限公司",
+                "value": 10,
+                "id": 51,
+                "categories": [
+                    "company4"
+                ],
+                "info": "光明房地产集团股份有限公司"
+            },
+            {
+                "label": "上海天诚置业有限公司",
+                "value": 10,
+                "id": 52,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海天诚置业有限公司"
+            },
+            {
+                "label": "上海市煤气公司",
+                "value": 10,
+                "id": 53,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海市煤气公司"
+            },
+            {
+                "label": "东方证券股份有限公司",
+                "value": 10,
+                "id": 54,
+                "categories": [
+                    "company4"
+                ],
+                "info": "东方证券股份有限公司"
+            },
+            {
+                "label": "上海金桥出口加工区开发股份有限公司",
+                "value": 10,
+                "id": 55,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海金桥出口加工区开发股份有限公司"
+            },
+            {
+                "label": "上海报业集团",
+                "value": 10,
+                "id": 56,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海报业集团"
+            },
+            {
+                "label": "上海建工集团股份有限公司",
+                "value": 10,
+                "id": 57,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海建工集团股份有限公司"
+            },
+            {
+                "label": "上海海烟投资管理有限公司",
+                "value": 10,
+                "id": 58,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海海烟投资管理有限公司"
+            },
+            {
+                "label": "上海电气（集团）总公司",
+                "value": 10,
+                "id": 59,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海电气（集团）总公司"
+            },
+            {
+                "label": "申能（集团）有限公司",
+                "value": 10,
+                "id": 60,
+                "categories": [
+                    "company5"
+                ],
+                "info": "申能（集团）有限公司"
+            },
+            {
+                "label": "浙能资本控股有限公司",
+                "value": 10,
+                "id": 61,
+                "categories": [
+                    "company5"
+                ],
+                "info": "浙能资本控股有限公司"
+            },
+            {
+                "label": "中国邮政集团公司",
+                "value": 10,
+                "id": 62,
+                "categories": [
+                    "company5"
+                ],
+                "info": "中国邮政集团公司"
+            },
+            {
+                "label": "上海财政证券公司",
+                "value": 10,
+                "id": 63,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海财政证券公司"
+            },
+            {
+                "label": "上海爱建信托有限责任公司",
+                "value": 10,
+                "id": 64,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海爱建信托有限责任公司"
+            },
+            {
+                "label": "上海爱建集团股份有限公司",
+                "value": 10,
+                "id": 65,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海爱建集团股份有限公司"
+            },
+            {
+                "label": "上海爱建纺织品有限公司",
+                "value": 10,
+                "id": 66,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海爱建纺织品有限公司"
+            },
+            {
+                "label": "上海爱建进出口有限公司",
+                "value": 10,
+                "id": 67,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海爱建进出口有限公司"
+            },
+            {
+                "label": "其他证券公司",
+                "value": 10,
+                "id": 68,
+                "categories": [
+                    "company4"
+                ],
+                "info": "其他证券公司"
+            },
+            {
+                "label": "光大证券股份有限公司上海淮海中路证券营业部",
+                "value": 10,
+                "id": 69,
+                "categories": [
+                    "company4"
+                ],
+                "info": "光大证券股份有限公司上海淮海中路证券营业部"
+            },
+            {
+                "label": "中海信托股份有限公司",
+                "value": 10,
+                "id": 70,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中海信托股份有限公司"
+            },
+            {
+                "label": "中国中信有限公司",
+                "value": 10,
+                "id": 71,
+                "categories": [
+                    "company5"
+                ],
+                "info": "中国中信有限公司"
+            },
+            {
+                "label": "中国海洋石油总公司",
+                "value": 10,
+                "id": 72,
+                "categories": [
+                    "company5"
+                ],
+                "info": "中国海洋石油总公司"
+            },
+            {
+                "label": "海通证券股份有限公司",
+                "value": 10,
+                "id": 73,
+                "categories": [
+                    "company4"
+                ],
+                "info": "海通证券股份有限公司"
+            },
+            {
+                "label": "中泰证券(上海)资产管理有限公司",
+                "value": 10,
+                "id": 74,
+                "categories": [
+                    "company5"
+                ],
+                "info": "中泰证券(上海)资产管理有限公司"
+            },
+            {
+                "label": "光明食品（集团）有限公司",
+                "value": 10,
+                "id": 75,
+                "categories": [
+                    "company5"
+                ],
+                "info": "光明食品（集团）有限公司"
+            },
+            {
+                "label": "云南国际信托有限公司",
+                "value": 10,
+                "id": 76,
+                "categories": [
+                    "company5"
+                ],
+                "info": "云南国际信托有限公司"
+            },
+            {
+                "label": "上海百联集团股份有限公司",
+                "value": 10,
+                "id": 77,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海百联集团股份有限公司"
+            },
+            {
+                "label": "深圳证券交易所",
+                "value": 10,
+                "id": 78,
+                "categories": [
+                    "company3"
+                ],
+                "info": "深圳证券交易所"
+            },
+            {
+                "label": "深圳市资本市场领导小组",
+                "value": 10,
+                "id": 79,
+                "categories": [
+                    "company4"
+                ],
+                "info": "深圳市资本市场领导小组"
+            },
+            {
+                "label": "郑州商品交易所",
+                "value": 10,
+                "id": 80,
+                "categories": [
+                    "company3"
+                ],
+                "info": "郑州商品交易所"
+            },
+            {
+                "label": "中国证券登记结算有限责任公司",
+                "value": 10,
+                "id": 81,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国证券登记结算有限责任公司"
+            },
+            {
+                "label": "上海期货交易所",
+                "value": 10,
+                "id": 82,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海期货交易所"
+            },
+            {
+                "label": "中国证监会",
+                "value": 10,
+                "id": 83,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中国证监会"
+            },
+            {
+                "label": "大连商品交易所",
+                "value": 10,
+                "id": 84,
+                "categories": [
+                    "company3"
+                ],
+                "info": "大连商品交易所"
+            },
+            {
+                "label": "中国金融期货交易所股份有限公司",
+                "value": 10,
+                "id": 85,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国金融期货交易所股份有限公司"
+            },
+            {
+                "label": "自然人股",
+                "value": 10,
+                "id": 86,
+                "categories": [
+                    "company3"
+                ],
+                "info": "自然人股"
+            },
+            {
+                "label": "上海新黄浦（集团）有限责任公司",
+                "value": 10,
+                "id": 87,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海新黄浦（集团）有限责任公司"
+            },
+            {
+                "label": "上海外滩投资开发（集团）有限公司",
+                "value": 10,
+                "id": 88,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海外滩投资开发（集团）有限公司"
+            },
+            {
+                "label": "上海市黄浦区国有资产监督管理委员会",
+                "value": 10,
+                "id": 89,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海市黄浦区国有资产监督管理委员会"
+            },
+            {
+                "label": "上海汽车集团股份有限公司",
+                "value": 10,
+                "id": 90,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海汽车集团股份有限公司"
+            },
+            {
+                "label": "流通股",
+                "value": 10,
+                "id": 91,
+                "categories": [
+                    "company4"
+                ],
+                "info": "流通股"
+            },
+            {
+                "label": "富德生命人寿保险股份有限公司",
+                "value": 10,
+                "id": 92,
+                "categories": [
+                    "company3"
+                ],
+                "info": "富德生命人寿保险股份有限公司"
+            },
+            {
+                "label": "深圳市富德金融投资控股有限公司",
+                "value": 10,
+                "id": 93,
+                "categories": [
+                    "company4"
+                ],
+                "info": "深圳市富德金融投资控股有限公司"
+            },
+            {
+                "label": "富德控股（集团）有限公司",
+                "value": 10,
+                "id": 94,
+                "categories": [
+                    "company5"
+                ],
+                "info": "富德控股（集团）有限公司"
+            },
+            {
+                "label": "深圳市盈德置地有限公司",
+                "value": 10,
+                "id": 95,
+                "categories": [
+                    "company4"
+                ],
+                "info": "深圳市盈德置地有限公司"
+            },
+            {
+                "label": "深圳市正大厚德产业投资有限公司",
+                "value": 10,
+                "id": 96,
+                "categories": [
+                    "company5"
+                ],
+                "info": "深圳市正大厚德产业投资有限公司"
+            },
+            {
+                "label": "大连实德集团有限公司",
+                "value": 10,
+                "id": 97,
+                "categories": [
+                    "company4"
+                ],
+                "info": "大连实德集团有限公司"
+            },
+            {
+                "label": "大连实德塑胶工业有限公司",
+                "value": 10,
+                "id": 98,
+                "categories": [
+                    "company5"
+                ],
+                "info": "大连实德塑胶工业有限公司"
+            },
+            {
+                "label": "陈春国",
+                "value": 10,
+                "id": 99,
+                "categories": [
+                    "company5"
+                ],
+                "info": "陈春国"
+            },
+            {
+                "label": "隋信敏",
+                "value": 10,
+                "id": 100,
+                "categories": [
+                    "company5"
+                ],
+                "info": "隋信敏"
+            },
+            {
+                "label": "大连大昌房屋开发公司",
+                "value": 10,
+                "id": 101,
+                "categories": [
+                    "company5"
+                ],
+                "info": "大连大昌房屋开发公司"
+            },
+            {
+                "label": "大连优普登商贸有限公司",
+                "value": 10,
+                "id": 102,
+                "categories": [
+                    "company5"
+                ],
+                "info": "大连优普登商贸有限公司"
+            },
+            {
+                "label": "徐斌",
+                "value": 10,
+                "id": 103,
+                "categories": [
+                    "company5"
+                ],
+                "info": "徐斌"
+            },
+            {
+                "label": "徐明",
+                "value": 10,
+                "id": 104,
+                "categories": [
+                    "company5"
+                ],
+                "info": "徐明"
+            },
+            {
+                "label": "徐春",
+                "value": 10,
+                "id": 105,
+                "categories": [
+                    "company5"
+                ],
+                "info": "徐春"
+            },
+            {
+                "label": "徐盛家",
+                "value": 10,
+                "id": 106,
+                "categories": [
+                    "company5"
+                ],
+                "info": "徐盛家"
+            },
+            {
+                "label": "富德保险控股股份有限公司",
+                "value": 10,
+                "id": 107,
+                "categories": [
+                    "company4"
+                ],
+                "info": "富德保险控股股份有限公司"
+            },
+            {
+                "label": "深圳市诚德投资有限公司",
+                "value": 10,
+                "id": 108,
+                "categories": [
+                    "company5"
+                ],
+                "info": "深圳市诚德投资有限公司"
+            },
+            {
+                "label": "深圳市国民投资发展有限公司",
+                "value": 10,
+                "id": 109,
+                "categories": [
+                    "company5"
+                ],
+                "info": "深圳市国民投资发展有限公司"
+            },
+            {
+                "label": "深圳市厚德金融控股有限公司",
+                "value": 10,
+                "id": 110,
+                "categories": [
+                    "company5"
+                ],
+                "info": "深圳市厚德金融控股有限公司"
+            },
+            {
+                "label": "深圳市国晟能源投资发展有限公司",
+                "value": 10,
+                "id": 111,
+                "categories": [
+                    "company5"
+                ],
+                "info": "深圳市国晟能源投资发展有限公司"
+            },
+            {
+                "label": "深圳市华诚投资发展有限公司",
+                "value": 10,
+                "id": 112,
+                "categories": [
+                    "company5"
+                ],
+                "info": "深圳市华诚投资发展有限公司"
+            },
+            {
+                "label": "深圳市洲际通商投资有限公司",
+                "value": 10,
+                "id": 113,
+                "categories": [
+                    "company4"
+                ],
+                "info": "深圳市洲际通商投资有限公司"
+            },
+            {
+                "label": "陕西天成伟业贸易有限公司",
+                "value": 10,
+                "id": 114,
+                "categories": [
+                    "company5"
+                ],
+                "info": "陕西天成伟业贸易有限公司"
+            },
+            {
+                "label": "杭州量化科技有限公司",
+                "value": 10,
+                "id": 115,
+                "categories": [
+                    "company5"
+                ],
+                "info": "杭州量化科技有限公司"
+            },
+            {
+                "label": "罗桂都",
+                "value": 10,
+                "id": 116,
+                "categories": [
+                    "company5"
+                ],
+                "info": "罗桂都"
+            },
+            {
+                "label": "张逢源",
+                "value": 10,
+                "id": 117,
+                "categories": [
+                    "company5"
+                ],
+                "info": "张逢源"
+            },
+            {
+                "label": "方晓红",
+                "value": 10,
+                "id": 118,
+                "categories": [
+                    "company5"
+                ],
+                "info": "方晓红"
+            },
+            {
+                "label": "大连东鹏房地产开发有限公司",
+                "value": 10,
+                "id": 119,
+                "categories": [
+                    "company4"
+                ],
+                "info": "大连东鹏房地产开发有限公司"
+            },
+            {
+                "label": "人和投资控股股份有限公司",
+                "value": 10,
+                "id": 120,
+                "categories": [
+                    "company5"
+                ],
+                "info": "人和投资控股股份有限公司"
+            },
+            {
+                "label": "梧桐树投资平台有限责任公司",
+                "value": 10,
+                "id": 121,
+                "categories": [
+                    "company3"
+                ],
+                "info": "梧桐树投资平台有限责任公司"
+            },
+            {
+                "label": "国家外汇管理局",
+                "value": 10,
+                "id": 122,
+                "categories": [
+                    "company4"
+                ],
+                "info": "国家外汇管理局"
+            },
+            {
+                "label": "上海上国投资产管理有限公司",
+                "value": 10,
+                "id": 123,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海上国投资产管理有限公司"
+            },
+            {
+                "label": "有限售条件的流通股",
+                "value": 10,
+                "id": 124,
+                "categories": [
+                    "company5"
+                ],
+                "info": "有限售条件的流通股"
+            },
+            {
+                "label": "申能股份有限公司",
+                "value": 10,
+                "id": 125,
+                "categories": [
+                    "company4"
+                ],
+                "info": "申能股份有限公司"
+            },
+            {
+                "label": "中国东方航空股份有限公司",
+                "value": 10,
+                "id": 126,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中国东方航空股份有限公司"
+            },
+            {
+                "label": "社会公众股",
+                "value": 10,
+                "id": 127,
+                "categories": [
+                    "company5"
+                ],
+                "info": "社会公众股"
+            },
+            {
+                "label": "东方航空集团公司",
+                "value": 10,
+                "id": 128,
+                "categories": [
+                    "company5"
+                ],
+                "info": "东方航空集团公司"
+            },
+            {
+                "label": "境外上市外资股",
+                "value": 10,
+                "id": 129,
+                "categories": [
+                    "company5"
+                ],
+                "info": "境外上市外资股"
+            },
+            {
+                "label": "上海地产（集团）有限公司",
+                "value": 10,
+                "id": 130,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海地产（集团）有限公司"
+            },
+            {
+                "label": "上海锦江国际投资管理有限公司",
+                "value": 10,
+                "id": 131,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海锦江国际投资管理有限公司"
+            },
+            {
+                "label": "锦江国际（集团）有限公司",
+                "value": 10,
+                "id": 132,
+                "categories": [
+                    "company5"
+                ],
+                "info": "锦江国际（集团）有限公司"
+            },
+            {
+                "label": "双钱轮胎集团有限公司",
+                "value": 10,
+                "id": 133,
+                "categories": [
+                    "company4"
+                ],
+                "info": "双钱轮胎集团有限公司"
+            },
+            {
+                "label": "上海华谊集团股份有限公司",
+                "value": 10,
+                "id": 134,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海华谊集团股份有限公司"
+            },
+            {
+                "label": "国网英大国际控股集团有限公司",
+                "value": 10,
+                "id": 135,
+                "categories": [
+                    "company4"
+                ],
+                "info": "国网英大国际控股集团有限公司"
+            },
+            {
+                "label": "国家电网公司",
+                "value": 10,
+                "id": 136,
+                "categories": [
+                    "company5"
+                ],
+                "info": "国家电网公司"
+            },
+            {
+                "label": "上海石化城市建设综合开发公司",
+                "value": 10,
+                "id": 137,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海石化城市建设综合开发公司"
+            },
+            {
+                "label": "上海新金山投资控股集团有限公司",
+                "value": 10,
+                "id": 138,
+                "categories": [
+                    "company5"
+                ],
+                "info": "上海新金山投资控股集团有限公司"
+            },
+            {
+                "label": "国家持股",
+                "value": 10,
+                "id": 139,
+                "categories": [
+                    "company5"
+                ],
+                "info": "国家持股"
+            },
+            {
+                "label": "境内上市外资股",
+                "value": 10,
+                "id": 140,
+                "categories": [
+                    "company5"
+                ],
+                "info": "境内上市外资股"
+            },
+            {
+                "label": "境内法人股",
+                "value": 10,
+                "id": 141,
+                "categories": [
+                    "company5"
+                ],
+                "info": "境内法人股"
+            },
+            {
+                "label": "中央汇金资产管理有限责任公司",
+                "value": 10,
+                "id": 142,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中央汇金资产管理有限责任公司"
+            },
+            {
+                "label": "中央汇金投资有限责任公司",
+                "value": 10,
+                "id": 143,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中央汇金投资有限责任公司"
+            },
+            {
+                "label": "中国投资有限责任公司",
+                "value": 10,
+                "id": 144,
+                "categories": [
+                    "company5"
+                ],
+                "info": "中国投资有限责任公司"
+            },
+            {
+                "label": "中国移动通信集团广东有限公司",
+                "value": 10,
+                "id": 145,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国移动通信集团广东有限公司"
+            },
+            {
+                "label": "中国移动通信有限公司",
+                "value": 10,
+                "id": 146,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中国移动通信有限公司"
+            },
+            {
+                "label": "中国移动通信（BVI）有限公司",
+                "value": 10,
+                "id": 147,
+                "categories": [
+                    "company5"
+                ],
+                "info": "中国移动通信（BVI）有限公司"
+            },
+            {
+                "label": "上海国鑫投资发展有限公司",
+                "value": 10,
+                "id": 148,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海国鑫投资发展有限公司"
+            },
+            {
+                "label": "上海市人民政府协作办公室",
+                "value": 10,
+                "id": 149,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海市人民政府协作办公室"
+            },
+            {
+                "label": "谢宗祥",
+                "value": 10,
+                "id": 150,
+                "categories": [
+                    "company2"
+                ],
+                "info": "谢宗祥"
+            },
+            {
+                "label": "仇引珍",
+                "value": 10,
+                "id": 151,
+                "categories": [
+                    "company2"
+                ],
+                "info": "仇引珍"
+            },
+            {
+                "label": "吴晓冬",
+                "value": 10,
+                "id": 152,
+                "categories": [
+                    "company2"
+                ],
+                "info": "吴晓冬"
+            },
+            {
+                "label": "上海隧道工程股份有限公司",
+                "value": 10,
+                "id": 153,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海隧道工程股份有限公司"
+            },
+            {
+                "label": "上海市浦东新区国有资产管理委员会",
+                "value": 10,
+                "id": 154,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海市浦东新区国有资产管理委员会"
+            },
+            {
+                "label": "上海张江（集团）有限公司",
+                "value": 10,
+                "id": 155,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海张江（集团）有限公司"
+            },
+            {
+                "label": "上海市南汇县液化气管理所",
+                "value": 10,
+                "id": 156,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海市南汇县液化气管理所"
+            },
+            {
+                "label": "上海浦东发展（集团）有限公司",
+                "value": 10,
+                "id": 157,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海浦东发展（集团）有限公司"
+            },
+            {
+                "label": "上海市浦东新区国有资产监督管理委员会",
+                "value": 10,
+                "id": 158,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海市浦东新区国有资产监督管理委员会"
+            },
+            {
+                "label": "国资办",
+                "value": 10,
+                "id": 159,
+                "categories": [
+                    "company2"
+                ],
+                "info": "国资办"
+            },
+            {
+                "label": "大连鑫北房地产开发有限责任公司",
+                "value": 10,
+                "id": 160,
+                "categories": [
+                    "company2"
+                ],
+                "info": "大连鑫北房地产开发有限责任公司"
+            },
+            {
+                "label": "王学镇",
+                "value": 10,
+                "id": 161,
+                "categories": [
+                    "company3"
+                ],
+                "info": "王学镇"
+            },
+            {
+                "label": "刘国强",
+                "value": 10,
+                "id": 162,
+                "categories": [
+                    "company3"
+                ],
+                "info": "刘国强"
+            },
+            {
+                "label": "林东洲",
+                "value": 10,
+                "id": 163,
+                "categories": [
+                    "company3"
+                ],
+                "info": "林东洲"
+            },
+            {
+                "label": "西部信托有限公司",
+                "value": 10,
+                "id": 164,
+                "categories": [
+                    "company2"
+                ],
+                "info": "西部信托有限公司"
+            },
+            {
+                "label": "陕西延长石油（集团）有限责任公司",
+                "value": 10,
+                "id": 165,
+                "categories": [
+                    "company3"
+                ],
+                "info": "陕西延长石油（集团）有限责任公司"
+            },
+            {
+                "label": "陕西省国资委",
+                "value": 10,
+                "id": 166,
+                "categories": [
+                    "company4"
+                ],
+                "info": "陕西省国资委"
+            },
+            {
+                "label": "延安市国资委",
+                "value": 10,
+                "id": 167,
+                "categories": [
+                    "company4"
+                ],
+                "info": "延安市国资委"
+            },
+            {
+                "label": "榆林市国资委",
+                "value": 10,
+                "id": 168,
+                "categories": [
+                    "company4"
+                ],
+                "info": "榆林市国资委"
+            },
+            {
+                "label": "重庆中侨置业有限公司",
+                "value": 10,
+                "id": 169,
+                "categories": [
+                    "company3"
+                ],
+                "info": "重庆中侨置业有限公司"
+            },
+            {
+                "label": "重庆川仪股份有限公司",
+                "value": 10,
+                "id": 170,
+                "categories": [
+                    "company4"
+                ],
+                "info": "重庆川仪股份有限公司"
+            },
+            {
+                "label": "重庆中渝物业发展有限公司",
+                "value": 10,
+                "id": 171,
+                "categories": [
+                    "company4"
+                ],
+                "info": "重庆中渝物业发展有限公司"
+            },
+            {
+                "label": "中国重庆国际经济技术合作公司中侨贸易公司",
+                "value": 10,
+                "id": 172,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中国重庆国际经济技术合作公司中侨贸易公司"
+            },
+            {
+                "label": "重庆康信置业有限公司",
+                "value": 10,
+                "id": 173,
+                "categories": [
+                    "company4"
+                ],
+                "info": "重庆康信置业有限公司"
+            },
+            {
+                "label": "北京鸿基世业房地产开发有限公司",
+                "value": 10,
+                "id": 174,
+                "categories": [
+                    "company3"
+                ],
+                "info": "北京鸿基世业房地产开发有限公司"
+            },
+            {
+                "label": "姜心刚",
+                "value": 10,
+                "id": 175,
+                "categories": [
+                    "company4"
+                ],
+                "info": "姜心刚"
+            },
+            {
+                "label": "张志鸿",
+                "value": 10,
+                "id": 176,
+                "categories": [
+                    "company4"
+                ],
+                "info": "张志鸿"
+            },
+            {
+                "label": "李文静",
+                "value": 10,
+                "id": 177,
+                "categories": [
+                    "company4"
+                ],
+                "info": "李文静"
+            },
+            {
+                "label": "彩虹集团公司",
+                "value": 10,
+                "id": 178,
+                "categories": [
+                    "company3"
+                ],
+                "info": "彩虹集团公司"
+            },
+            {
+                "label": "陕西省产业投资有限公司",
+                "value": 10,
+                "id": 179,
+                "categories": [
+                    "company3"
+                ],
+                "info": "陕西省产业投资有限公司"
+            },
+            {
+                "label": "陕西金融控股集团有限公司",
+                "value": 10,
+                "id": 180,
+                "categories": [
+                    "company4"
+                ],
+                "info": "陕西金融控股集团有限公司"
+            },
+            {
+                "label": "中国烟草总公司陕西省公司",
+                "value": 10,
+                "id": 181,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国烟草总公司陕西省公司"
+            },
+            {
+                "label": "宝鸡稀有金属装备设计研制所",
+                "value": 10,
+                "id": 182,
+                "categories": [
+                    "company3"
+                ],
+                "info": "宝鸡稀有金属装备设计研制所"
+            },
+            {
+                "label": "宝钛集团有限公司",
+                "value": 10,
+                "id": 183,
+                "categories": [
+                    "company4"
+                ],
+                "info": "宝钛集团有限公司"
+            },
+            {
+                "label": "陕西省电力建设投资开发公司",
+                "value": 10,
+                "id": 184,
+                "categories": [
+                    "company3"
+                ],
+                "info": "陕西省电力建设投资开发公司"
+            },
+            {
+                "label": "陕西省人民政府",
+                "value": 10,
+                "id": 185,
+                "categories": [
+                    "company4"
+                ],
+                "info": "陕西省人民政府"
+            },
+            {
+                "label": "陕西金叶科教集团股份有限公司",
+                "value": 10,
+                "id": 186,
+                "categories": [
+                    "company3"
+                ],
+                "info": "陕西金叶科教集团股份有限公司"
+            },
+            {
+                "label": "万裕文化产业有限公司",
+                "value": 10,
+                "id": 187,
+                "categories": [
+                    "company4"
+                ],
+                "info": "万裕文化产业有限公司"
+            },
+            {
+                "label": "澄城卷烟厂",
+                "value": 10,
+                "id": 188,
+                "categories": [
+                    "company4"
+                ],
+                "info": "澄城卷烟厂"
+            },
+            {
+                "label": "上海证大投资发展股份有限公司",
+                "value": 10,
+                "id": 189,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海证大投资发展股份有限公司"
+            },
+            {
+                "label": "戴志康",
+                "value": 10,
+                "id": 190,
+                "categories": [
+                    "company4"
+                ],
+                "info": "戴志康"
+            },
+            {
+                "label": "戴志祥",
+                "value": 10,
+                "id": 191,
+                "categories": [
+                    "company4"
+                ],
+                "info": "戴志祥"
+            },
+            {
+                "label": "戴陌草",
+                "value": 10,
+                "id": 192,
+                "categories": [
+                    "company4"
+                ],
+                "info": "戴陌草"
+            },
+            {
+                "label": "中国长城资产管理股份有限公司",
+                "value": 10,
+                "id": 193,
+                "categories": [
+                    "company2"
+                ],
+                "info": "中国长城资产管理股份有限公司"
+            },
+            {
+                "label": "全国社会保障基金理事会",
+                "value": 10,
+                "id": 194,
+                "categories": [
+                    "company3"
+                ],
+                "info": "全国社会保障基金理事会"
+            },
+            {
+                "label": "财政部",
+                "value": 10,
+                "id": 195,
+                "categories": [
+                    "company3"
+                ],
+                "info": "财政部"
+            },
+            {
+                "label": "中国人寿保险（集团）公司",
+                "value": 10,
+                "id": 196,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国人寿保险（集团）公司"
+            },
+            {
+                "label": "国务院",
+                "value": 10,
+                "id": 197,
+                "categories": [
+                    "company4"
+                ],
+                "info": "国务院"
+            },
+            {
+                "label": "中泰信托有限责任公司",
+                "value": 10,
+                "id": 198,
+                "categories": [
+                    "company2"
+                ],
+                "info": "中泰信托有限责任公司"
+            },
+            {
+                "label": "中国华闻投资控股有限公司",
+                "value": 10,
+                "id": 199,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国华闻投资控股有限公司"
+            },
+            {
+                "label": "北京国际信托有限公司",
+                "value": 10,
+                "id": 200,
+                "categories": [
+                    "company4"
+                ],
+                "info": "北京国际信托有限公司"
+            },
+            {
+                "label": "广联(南宁)投资股份有限公司",
+                "value": 10,
+                "id": 201,
+                "categories": [
+                    "company3"
+                ],
+                "info": "广联(南宁)投资股份有限公司"
+            },
+            {
+                "label": "上海贵灵实业有限公司",
+                "value": 10,
+                "id": 202,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海贵灵实业有限公司"
+            },
+            {
+                "label": "张友进",
+                "value": 10,
+                "id": 203,
+                "categories": [
+                    "company4"
+                ],
+                "info": "张友进"
+            },
+            {
+                "label": "张达",
+                "value": 10,
+                "id": 204,
+                "categories": [
+                    "company4"
+                ],
+                "info": "张达"
+            },
+            {
+                "label": "江西江南信托投资股份有限公司",
+                "value": 10,
+                "id": 205,
+                "categories": [
+                    "company2"
+                ],
+                "info": "江西江南信托投资股份有限公司"
+            },
+            {
+                "label": "上海为林绿化景观有限公司",
+                "value": 10,
+                "id": 206,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海为林绿化景观有限公司"
+            },
+            {
+                "label": "李卫林",
+                "value": 10,
+                "id": 207,
+                "categories": [
+                    "company3"
+                ],
+                "info": "李卫林"
+            },
+            {
+                "label": "李烨",
+                "value": 10,
+                "id": 208,
+                "categories": [
+                    "company3"
+                ],
+                "info": "李烨"
+            },
+            {
+                "label": "人民日报社上海分社",
+                "value": 10,
+                "id": 209,
+                "categories": [
+                    "company2"
+                ],
+                "info": "人民日报社上海分社"
+            },
+            {
+                "label": "上海浦东为林房地产开发有限公司",
+                "value": 10,
+                "id": 210,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海浦东为林房地产开发有限公司"
+            },
+            {
+                "label": "上海黄海企业发展公司",
+                "value": 10,
+                "id": 211,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海黄海企业发展公司"
+            },
+            {
+                "label": "上海华夏宾馆",
+                "value": 10,
+                "id": 212,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海华夏宾馆"
+            },
+            {
+                "label": "上海申岳企业发展（集团）有限公司",
+                "value": 10,
+                "id": 213,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海申岳企业发展（集团）有限公司"
+            },
+            {
+                "label": "上海市监狱管理局",
+                "value": 10,
+                "id": 214,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上海市监狱管理局"
+            },
+            {
+                "label": "上海市申江企业总公司",
+                "value": 10,
+                "id": 215,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海市申江企业总公司"
+            },
+            {
+                "label": "上海陆家嘴金融贸易区联合发展有限公司",
+                "value": 10,
+                "id": 216,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海陆家嘴金融贸易区联合发展有限公司"
+            },
+            {
+                "label": "香港泽鸿发展有限公司",
+                "value": 10,
+                "id": 217,
+                "categories": [
+                    "company3"
+                ],
+                "info": "香港泽鸿发展有限公司"
+            },
+            {
+                "label": "上海陆家嘴金融贸易区开发股份有限公司",
+                "value": 10,
+                "id": 218,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海陆家嘴金融贸易区开发股份有限公司"
+            },
+            {
+                "label": "国家股",
+                "value": 10,
+                "id": 219,
+                "categories": [
+                    "company4"
+                ],
+                "info": "国家股"
+            },
+            {
+                "label": "上实投资（上海）有限公司",
+                "value": 10,
+                "id": 220,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上实投资（上海）有限公司"
+            },
+            {
+                "label": "上实国际投资（BVI）有限公司",
+                "value": 10,
+                "id": 221,
+                "categories": [
+                    "company4"
+                ],
+                "info": "上实国际投资（BVI）有限公司"
+            },
+            {
+                "label": "南洋兄弟投资（中国）有限公司",
+                "value": 10,
+                "id": 222,
+                "categories": [
+                    "company4"
+                ],
+                "info": "南洋兄弟投资（中国）有限公司"
+            },
+            {
+                "label": "中国人保控股公司",
+                "value": 10,
+                "id": 223,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国人保控股公司"
+            },
+            {
+                "label": "上海陆家嘴房产开发有限公司工会职工持股会",
+                "value": 10,
+                "id": 224,
+                "categories": [
+                    "company2"
+                ],
+                "info": "上海陆家嘴房产开发有限公司工会职工持股会"
+            },
+            {
+                "label": "无限售条件流通股",
+                "value": 10,
+                "id": 225,
+                "categories": [
+                    "company2"
+                ],
+                "info": "无限售条件流通股"
+            },
+            {
+                "label": "有限售条件流通股",
+                "value": 10,
+                "id": 226,
+                "categories": [
+                    "company2"
+                ],
+                "info": "有限售条件流通股"
+            },
+            {
+                "label": "社会个人股",
+                "value": 10,
+                "id": 227,
+                "categories": [
+                    "company3"
+                ],
+                "info": "社会个人股"
+            },
+            {
+                "label": "无限售条件的境内上市人民币普通股(A股)股东",
+                "value": 10,
+                "id": 228,
+                "categories": [
+                    "company3"
+                ],
+                "info": "无限售条件的境内上市人民币普通股(A股)股东"
+            },
+            {
+                "label": "有限售条件的境内上市人民币普通股(A股)股东",
+                "value": 10,
+                "id": 229,
+                "categories": [
+                    "company3"
+                ],
+                "info": "有限售条件的境内上市人民币普通股(A股)股东"
+            },
+            {
+                "label": "上海烟草集团有限责任公司",
+                "value": 10,
+                "id": 230,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海烟草集团有限责任公司"
+            },
+            {
+                "label": "中国烟草总公司",
+                "value": 10,
+                "id": 231,
+                "categories": [
+                    "company4"
+                ],
+                "info": "中国烟草总公司"
+            },
+            {
+                "label": "市国资委",
+                "value": 10,
+                "id": 232,
+                "categories": [
+                    "company3"
+                ],
+                "info": "市国资委"
+            },
+            {
+                "label": "浙江省能源集团有限公司",
+                "value": 10,
+                "id": 233,
+                "categories": [
+                    "company3"
+                ],
+                "info": "浙江省能源集团有限公司"
+            },
+            {
+                "label": "省政府",
+                "value": 10,
+                "id": 234,
+                "categories": [
+                    "company4"
+                ],
+                "info": "省政府"
+            },
+            {
+                "label": "上海爱建产业发展有限公司",
+                "value": 10,
+                "id": 235,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海爱建产业发展有限公司"
+            },
+            {
+                "label": "中国中信股份有限公司",
+                "value": 10,
+                "id": 236,
+                "categories": [
+                    "company3"
+                ],
+                "info": "中国中信股份有限公司"
+            },
+            {
+                "label": "上海国盛（集团）有限公司",
+                "value": 10,
+                "id": 237,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海国盛（集团）有限公司"
+            },
+            {
+                "label": "北京知金科技投资有限公司",
+                "value": 10,
+                "id": 238,
+                "categories": [
+                    "company3"
+                ],
+                "info": "北京知金科技投资有限公司"
+            },
+            {
+                "label": "陈金霞",
+                "value": 10,
+                "id": 239,
+                "categories": [
+                    "company4"
+                ],
+                "info": "陈金霞"
+            },
+            {
+                "label": "涌金实业（集团）有限公司",
+                "value": 10,
+                "id": 240,
+                "categories": [
+                    "company4"
+                ],
+                "info": "涌金实业（集团）有限公司"
+            },
+            {
+                "label": "赵丕华",
+                "value": 10,
+                "id": 241,
+                "categories": [
+                    "company5"
+                ],
+                "info": "赵丕华"
+            },
+            {
+                "label": "刘先震",
+                "value": 10,
+                "id": 242,
+                "categories": [
+                    "company5"
+                ],
+                "info": "刘先震"
+            },
+            {
+                "label": "沈静",
+                "value": 10,
+                "id": 243,
+                "categories": [
+                    "company5"
+                ],
+                "info": "沈静"
+            },
+            {
+                "label": "朱艳君",
+                "value": 10,
+                "id": 244,
+                "categories": [
+                    "company4"
+                ],
+                "info": "朱艳君"
+            },
+            {
+                "label": "云南省财政厅",
+                "value": 10,
+                "id": 245,
+                "categories": [
+                    "company3"
+                ],
+                "info": "云南省财政厅"
+            },
+            {
+                "label": "涌金实业(集团)有限公司",
+                "value": 10,
+                "id": 246,
+                "categories": [
+                    "company3"
+                ],
+                "info": "涌金实业(集团)有限公司"
+            },
+            {
+                "label": "上海纳米创业投资有限公司",
+                "value": 10,
+                "id": 247,
+                "categories": [
+                    "company3"
+                ],
+                "info": "上海纳米创业投资有限公司"
+            },
+            {
+                "label": "俞国音",
+                "value": 10,
+                "id": 248,
+                "categories": [
+                    "company4"
+                ],
+                "info": "俞国音"
+            }
+        ],
+        "edges": [
+            {
+                "id": 10000,
+                "label": "持股:0.0",
+                "from": 2,
+                "to": 1
+            },
+            {
+                "id": 10001,
+                "label": "持股:0.02",
+                "from": 3,
+                "to": 2
+            },
+            {
+                "id": 10002,
+                "label": "持股:0.98",
+                "from": 4,
+                "to": 2
+            },
+            {
+                "id": 10003,
+                "label": "持股:1.0",
+                "from": 5,
+                "to": 4
+            },
+            {
+                "id": 10004,
+                "label": "持股:0.0",
+                "from": 6,
+                "to": 1
+            },
+            {
+                "id": 10005,
+                "label": "持股:0.0",
+                "from": 7,
+                "to": 6
+            },
+            {
+                "id": 10006,
+                "label": "持股:0.0",
+                "from": 8,
+                "to": 6
+            },
+            {
+                "id": 10007,
+                "label": "持股:1.0",
+                "from": 9,
+                "to": 8
+            },
+            {
+                "id": 10008,
+                "label": "持股:0.0",
+                "from": 10,
+                "to": 6
+            },
+            {
+                "id": 10009,
+                "label": "持股:0.0",
+                "from": 11,
+                "to": 6
+            },
+            {
+                "id": 10010,
+                "label": "持股:0.0",
+                "from": 12,
+                "to": 6
+            },
+            {
+                "id": 10011,
+                "label": "持股:0.0",
+                "from": 13,
+                "to": 1
+            },
+            {
+                "id": 10012,
+                "label": "持股:0.0699",
+                "from": 14,
+                "to": 13
+            },
+            {
+                "id": 10013,
+                "label": "持股:1.0",
+                "from": 15,
+                "to": 14
+            },
+            {
+                "id": 10014,
+                "label": "持股:0.2182",
+                "from": 16,
+                "to": 13
+            },
+            {
+                "id": 10015,
+                "label": "持股:1.0",
+                "from": 17,
+                "to": 16
+            },
+            {
+                "id": 10016,
+                "label": "持股:1.0",
+                "from": 9,
+                "to": 17
+            },
+            {
+                "id": 10017,
+                "label": "持股:0.0177",
+                "from": 18,
+                "to": 13
+            },
+            {
+                "id": 10018,
+                "label": "持股:0.0",
+                "from": 19,
+                "to": 18
+            },
+            {
+                "id": 10019,
+                "label": "持股:0.0",
+                "from": 20,
+                "to": 18
+            },
+            {
+                "id": 10020,
+                "label": "持股:0.0283",
+                "from": 21,
+                "to": 13
+            },
+            {
+                "id": 10021,
+                "label": "持股:1.0",
+                "from": 22,
+                "to": 21
+            },
+            {
+                "id": 10022,
+                "label": "持股:0.4439",
+                "from": 23,
+                "to": 21
+            },
+            {
+                "id": 10023,
+                "label": "持股:0.5561",
+                "from": 24,
+                "to": 21
+            },
+            {
+                "id": 10024,
+                "label": "持股:0.1374",
+                "from": 25,
+                "to": 13
+            },
+            {
+                "id": 10025,
+                "label": "持股:0.0173",
+                "from": 26,
+                "to": 13
+            },
+            {
+                "id": 10026,
+                "label": "持股:0.0141",
+                "from": 27,
+                "to": 13
+            },
+            {
+                "id": 10027,
+                "label": "持股:0.6613",
+                "from": 28,
+                "to": 27
+            },
+            {
+                "id": 10028,
+                "label": "持股:0.3387",
+                "from": 29,
+                "to": 27
+            },
+            {
+                "id": 10029,
+                "label": "持股:0.0783",
+                "from": 17,
+                "to": 13
+            },
+            {
+                "id": 10030,
+                "label": "持股:0.0139",
+                "from": 30,
+                "to": 13
+            },
+            {
+                "id": 10031,
+                "label": "持股:0.0431",
+                "from": 31,
+                "to": 13
+            },
+            {
+                "id": 10032,
+                "label": "持股:0.205",
+                "from": 1,
+                "to": 31
+            },
+            {
+                "id": 10033,
+                "label": "持股:0.0",
+                "from": 32,
+                "to": 1
+            },
+            {
+                "id": 10034,
+                "label": "持股:0.0067",
+                "from": 33,
+                "to": 32
+            },
+            {
+                "id": 10035,
+                "label": "持股:0.02",
+                "from": 34,
+                "to": 32
+            },
+            {
+                "id": 10036,
+                "label": "持股:0.9733",
+                "from": 35,
+                "to": 32
+            },
+            {
+                "id": 10037,
+                "label": "持股:0.03",
+                "from": 36,
+                "to": 1
+            },
+            {
+                "id": 10038,
+                "label": "持股:0.0",
+                "from": 1,
+                "to": 31
+            },
+            {
+                "id": 10039,
+                "label": "持股:0.205",
+                "from": 31,
+                "to": 13
+            },
+            {
+                "id": 10040,
+                "label": "持股:0.0431",
+                "from": 13,
+                "to": 1
+            },
+            {
+                "id": 10041,
+                "label": "持股:0.015",
+                "from": 37,
+                "to": 1
+            },
+            {
+                "id": 10042,
+                "label": "持股:0.07",
+                "from": 38,
+                "to": 1
+            },
+            {
+                "id": 10043,
+                "label": "持股:0.08",
+                "from": 39,
+                "to": 1
+            },
+            {
+                "id": 10044,
+                "label": "持股:0.1",
+                "from": 40,
+                "to": 1
+            },
+            {
+                "id": 10045,
+                "label": "持股:0.02",
+                "from": 41,
+                "to": 1
+            },
+            {
+                "id": 10046,
+                "label": "持股:0.07",
+                "from": 42,
+                "to": 1
+            },
+            {
+                "id": 10047,
+                "label": "持股:0.05",
+                "from": 43,
+                "to": 1
+            },
+            {
+                "id": 10048,
+                "label": "持股:0.05",
+                "from": 44,
+                "to": 1
+            },
+            {
+                "id": 10049,
+                "label": "持股:0.05",
+                "from": 45,
+                "to": 1
+            },
+            {
+                "id": 10050,
+                "label": "持股:0.1",
+                "from": 46,
+                "to": 1
+            },
+            {
+                "id": 10051,
+                "label": "持股:0.07",
+                "from": 47,
+                "to": 1
+            },
+            {
+                "id": 10052,
+                "label": "持股:0.02",
+                "from": 48,
+                "to": 1
+            },
+            {
+                "id": 10053,
+                "label": "持股:0.025",
+                "from": 49,
+                "to": 1
+            },
+            {
+                "id": 10054,
+                "label": "持股:0.05",
+                "from": 50,
+                "to": 1
+            },
+            {
+                "id": 10055,
+                "label": "持股:0.05",
+                "from": 51,
+                "to": 1
+            },
+            {
+                "id": 10056,
+                "label": "持股:0.08",
+                "from": 52,
+                "to": 1
+            },
+            {
+                "id": 10057,
+                "label": "持股:0.07",
+                "from": 53,
+                "to": 1
+            },
+            {
+                "id": 10058,
+                "label": "持股:0.0",
+                "from": 54,
+                "to": 1
+            },
+            {
+                "id": 10059,
+                "label": "持股:0.023",
+                "from": 55,
+                "to": 54
+            },
+            {
+                "id": 10060,
+                "label": "持股:0.1468",
+                "from": 25,
+                "to": 54
+            },
+            {
+                "id": 10061,
+                "label": "持股:0.0348",
+                "from": 56,
+                "to": 54
+            },
+            {
+                "id": 10062,
+                "label": "持股:0.0191",
+                "from": 57,
+                "to": 54
+            },
+            {
+                "id": 10063,
+                "label": "持股:0.0494",
+                "from": 58,
+                "to": 54
+            },
+            {
+                "id": 10064,
+                "label": "持股:0.0277",
+                "from": 59,
+                "to": 54
+            },
+            {
+                "id": 10065,
+                "label": "持股:0.2527",
+                "from": 60,
+                "to": 54
+            },
+            {
+                "id": 10066,
+                "label": "持股:0.0298",
+                "from": 61,
+                "to": 54
+            },
+            {
+                "id": 10067,
+                "label": "持股:0.0256",
+                "from": 62,
+                "to": 54
+            },
+            {
+                "id": 10068,
+                "label": "持股:0.0389",
+                "from": 31,
+                "to": 54
+            },
+            {
+                "id": 10069,
+                "label": "持股:0.0",
+                "from": 63,
+                "to": 1
+            },
+            {
+                "id": 10070,
+                "label": "持股:1.0",
+                "from": 11,
+                "to": 63
+            },
+            {
+                "id": 10071,
+                "label": "持股:0.0",
+                "from": 64,
+                "to": 1
+            },
+            {
+                "id": 10072,
+                "label": "持股:0.993",
+                "from": 65,
+                "to": 64
+            },
+            {
+                "id": 10073,
+                "label": "持股:0.0033",
+                "from": 66,
+                "to": 64
+            },
+            {
+                "id": 10074,
+                "label": "持股:0.0033",
+                "from": 67,
+                "to": 64
+            },
+            {
+                "id": 10075,
+                "label": "持股:0.0",
+                "from": 68,
+                "to": 1
+            },
+            {
+                "id": 10076,
+                "label": "持股:0.0",
+                "from": 69,
+                "to": 1
+            },
+            {
+                "id": 10077,
+                "label": "持股:0.0",
+                "from": 70,
+                "to": 1
+            },
+            {
+                "id": 10078,
+                "label": "持股:0.05",
+                "from": 71,
+                "to": 70
+            },
+            {
+                "id": 10079,
+                "label": "持股:0.95",
+                "from": 72,
+                "to": 70
+            },
+            {
+                "id": 10080,
+                "label": "持股:0.0",
+                "from": 73,
+                "to": 1
+            },
+            {
+                "id": 10081,
+                "label": "持股:0.2964",
+                "from": 25,
+                "to": 73
+            },
+            {
+                "id": 10082,
+                "label": "持股:0.0205",
+                "from": 8,
+                "to": 73
+            },
+            {
+                "id": 10083,
+                "label": "持股:0.0168",
+                "from": 74,
+                "to": 73
+            },
+            {
+                "id": 10084,
+                "label": "持股:0.0348",
+                "from": 58,
+                "to": 73
+            },
+            {
+                "id": 10085,
+                "label": "持股:0.035",
+                "from": 75,
+                "to": 73
+            },
+            {
+                "id": 10086,
+                "label": "持股:0.0231",
+                "from": 59,
+                "to": 73
+            },
+            {
+                "id": 10087,
+                "label": "持股:0.028",
+                "from": 60,
+                "to": 73
+            },
+            {
+                "id": 10088,
+                "label": "持股:0.0163",
+                "from": 76,
+                "to": 73
+            },
+            {
+                "id": 10089,
+                "label": "持股:0.0186",
+                "from": 77,
+                "to": 73
+            },
+            {
+                "id": 10090,
+                "label": "持股:0.049",
+                "from": 31,
+                "to": 73
+            },
+            {
+                "id": 10091,
+                "label": "持股:0.205",
+                "from": 78,
+                "to": 31
+            },
+            {
+                "id": 10092,
+                "label": "持股:1.0",
+                "from": 79,
+                "to": 78
+            },
+            {
+                "id": 10093,
+                "label": "持股:0.05",
+                "from": 80,
+                "to": 31
+            },
+            {
+                "id": 10094,
+                "label": "持股:0.1875",
+                "from": 81,
+                "to": 31
+            },
+            {
+                "id": 10095,
+                "label": "持股:0.5",
+                "from": 1,
+                "to": 81
+            },
+            {
+                "id": 10096,
+                "label": "持股:0.5",
+                "from": 78,
+                "to": 81
+            },
+            {
+                "id": 10097,
+                "label": "持股:0.14583",
+                "from": 82,
+                "to": 31
+            },
+            {
+                "id": 10098,
+                "label": "持股:1.0",
+                "from": 83,
+                "to": 82
+            },
+            {
+                "id": 10099,
+                "label": "持股:0.09",
+                "from": 84,
+                "to": 31
+            },
+            {
+                "id": 10100,
+                "label": "持股:0.11667",
+                "from": 85,
+                "to": 31
+            },
+            {
+                "id": 10101,
+                "label": "持股:0.2",
+                "from": 1,
+                "to": 85
+            },
+            {
+                "id": 10102,
+                "label": "持股:0.2",
+                "from": 78,
+                "to": 85
+            },
+            {
+                "id": 10103,
+                "label": "持股:0.2",
+                "from": 80,
+                "to": 85
+            },
+            {
+                "id": 10104,
+                "label": "持股:0.2",
+                "from": 82,
+                "to": 85
+            },
+            {
+                "id": 10105,
+                "label": "持股:0.2",
+                "from": 84,
+                "to": 85
+            },
+            {
+                "id": 10106,
+                "label": "持股:0.5036",
+                "from": 86,
+                "to": 33
+            },
+            {
+                "id": 10107,
+                "label": "持股:0.4964",
+                "from": 87,
+                "to": 33
+            },
+            {
+                "id": 10108,
+                "label": "持股:1.0",
+                "from": 88,
+                "to": 87
+            },
+            {
+                "id": 10109,
+                "label": "持股:1.0",
+                "from": 89,
+                "to": 88
+            },
+            {
+                "id": 10110,
+                "label": "持股:1.0",
+                "from": 90,
+                "to": 34
+            },
+            {
+                "id": 10111,
+                "label": "持股:1.0",
+                "from": 91,
+                "to": 90
+            },
+            {
+                "id": 10112,
+                "label": "持股:0.1981",
+                "from": 92,
+                "to": 35
+            },
+            {
+                "id": 10113,
+                "label": "持股:0.2",
+                "from": 93,
+                "to": 92
+            },
+            {
+                "id": 10114,
+                "label": "持股:1.0",
+                "from": 94,
+                "to": 93
+            },
+            {
+                "id": 10115,
+                "label": "持股:0.1527",
+                "from": 95,
+                "to": 92
+            },
+            {
+                "id": 10116,
+                "label": "持股:0.5795",
+                "from": 96,
+                "to": 95
+            },
+            {
+                "id": 10117,
+                "label": "持股:0.0388",
+                "from": 97,
+                "to": 92
+            },
+            {
+                "id": 10118,
+                "label": "持股:0.0968",
+                "from": 98,
+                "to": 97
+            },
+            {
+                "id": 10119,
+                "label": "持股:0.115",
+                "from": 99,
+                "to": 97
+            },
+            {
+                "id": 10120,
+                "label": "持股:0.2124",
+                "from": 100,
+                "to": 97
+            },
+            {
+                "id": 10121,
+                "label": "持股:0.0565",
+                "from": 101,
+                "to": 97
+            },
+            {
+                "id": 10122,
+                "label": "持股:0.1207",
+                "from": 102,
+                "to": 97
+            },
+            {
+                "id": 10123,
+                "label": "持股:0.1472",
+                "from": 103,
+                "to": 97
+            },
+            {
+                "id": 10124,
+                "label": "持股:0.253",
+                "from": 104,
+                "to": 97
+            },
+            {
+                "id": 10125,
+                "label": "持股:0.068",
+                "from": 105,
+                "to": 97
+            },
+            {
+                "id": 10126,
+                "label": "持股:0.0505",
+                "from": 106,
+                "to": 97
+            },
+            {
+                "id": 10127,
+                "label": "持股:0.1057",
+                "from": 107,
+                "to": 92
+            },
+            {
+                "id": 10128,
+                "label": "持股:0.2",
+                "from": 93,
+                "to": 107
+            },
+            {
+                "id": 10129,
+                "label": "持股:0.199",
+                "from": 95,
+                "to": 107
+            },
+            {
+                "id": 10130,
+                "label": "持股:0.149",
+                "from": 108,
+                "to": 107
+            },
+            {
+                "id": 10131,
+                "label": "持股:0.199",
+                "from": 109,
+                "to": 107
+            },
+            {
+                "id": 10132,
+                "label": "持股:0.0",
+                "from": 110,
+                "to": 107
+            },
+            {
+                "id": 10133,
+                "label": "持股:0.054",
+                "from": 111,
+                "to": 107
+            },
+            {
+                "id": 10134,
+                "label": "持股:0.1677",
+                "from": 109,
+                "to": 92
+            },
+            {
+                "id": 10135,
+                "label": "持股:0.5447",
+                "from": 112,
+                "to": 109
+            },
+            {
+                "id": 10136,
+                "label": "持股:0.117",
+                "from": 113,
+                "to": 92
+            },
+            {
+                "id": 10137,
+                "label": "持股:0.2908",
+                "from": 114,
+                "to": 113
+            },
+            {
+                "id": 10138,
+                "label": "持股:0.0",
+                "from": 115,
+                "to": 113
+            },
+            {
+                "id": 10139,
+                "label": "持股:0.1793",
+                "from": 110,
+                "to": 92
+            },
+            {
+                "id": 10140,
+                "label": "持股:0.3992",
+                "from": 116,
+                "to": 110
+            },
+            {
+                "id": 10141,
+                "label": "持股:0.5675",
+                "from": 117,
+                "to": 110
+            },
+            {
+                "id": 10142,
+                "label": "持股:0.0333",
+                "from": 118,
+                "to": 110
+            },
+            {
+                "id": 10143,
+                "label": "持股:0.0388",
+                "from": 119,
+                "to": 92
+            },
+            {
+                "id": 10144,
+                "label": "持股:1.0",
+                "from": 120,
+                "to": 119
+            },
+            {
+                "id": 10145,
+                "label": "持股:0.0302",
+                "from": 121,
+                "to": 35
+            },
+            {
+                "id": 10146,
+                "label": "持股:1.0",
+                "from": 122,
+                "to": 121
+            },
+            {
+                "id": 10147,
+                "label": "持股:0.0475",
+                "from": 123,
+                "to": 35
+            },
+            {
+                "id": 10148,
+                "label": "持股:0.004",
+                "from": 65,
+                "to": 123
+            },
+            {
+                "id": 10149,
+                "label": "持股:0.7398",
+                "from": 20,
+                "to": 65
+            },
+            {
+                "id": 10150,
+                "label": "持股:1.0",
+                "from": 124,
+                "to": 65
+            },
+            {
+                "id": 10151,
+                "label": "持股:0.05",
+                "from": 125,
+                "to": 123
+            },
+            {
+                "id": 10152,
+                "label": "持股:1.0",
+                "from": 23,
+                "to": 125
+            },
+            {
+                "id": 10153,
+                "label": "持股:0.0067",
+                "from": 126,
+                "to": 123
+            },
+            {
+                "id": 10154,
+                "label": "持股:0.0616",
+                "from": 127,
+                "to": 126
+            },
+            {
+                "id": 10155,
+                "label": "持股:0.6164",
+                "from": 128,
+                "to": 126
+            },
+            {
+                "id": 10156,
+                "label": "持股:0.322",
+                "from": 129,
+                "to": 126
+            },
+            {
+                "id": 10157,
+                "label": "持股:0.0067",
+                "from": 33,
+                "to": 123
+            },
+            {
+                "id": 10158,
+                "label": "持股:0.2",
+                "from": 8,
+                "to": 123
+            },
+            {
+                "id": 10159,
+                "label": "持股:0.0067",
+                "from": 130,
+                "to": 123
+            },
+            {
+                "id": 10160,
+                "label": "持股:1.0",
+                "from": 9,
+                "to": 130
+            },
+            {
+                "id": 10161,
+                "label": "持股:0.6633",
+                "from": 17,
+                "to": 123
+            },
+            {
+                "id": 10162,
+                "label": "持股:0.0133",
+                "from": 131,
+                "to": 123
+            },
+            {
+                "id": 10163,
+                "label": "持股:1.0",
+                "from": 132,
+                "to": 131
+            },
+            {
+                "id": 10164,
+                "label": "持股:0.0053",
+                "from": 133,
+                "to": 123
+            },
+            {
+                "id": 10165,
+                "label": "持股:1.0",
+                "from": 134,
+                "to": 133
+            },
+            {
+                "id": 10166,
+                "label": "持股:0.02",
+                "from": 34,
+                "to": 123
+            },
+            {
+                "id": 10167,
+                "label": "持股:0.0067",
+                "from": 135,
+                "to": 123
+            },
+            {
+                "id": 10168,
+                "label": "持股:1.0",
+                "from": 136,
+                "to": 135
+            },
+            {
+                "id": 10169,
+                "label": "持股:0.0133",
+                "from": 137,
+                "to": 123
+            },
+            {
+                "id": 10170,
+                "label": "持股:1.0",
+                "from": 138,
+                "to": 137
+            },
+            {
+                "id": 10171,
+                "label": "持股:0.004",
+                "from": 77,
+                "to": 123
+            },
+            {
+                "id": 10172,
+                "label": "持股:0.2509",
+                "from": 127,
+                "to": 77
+            },
+            {
+                "id": 10173,
+                "label": "持股:0.3212",
+                "from": 139,
+                "to": 77
+            },
+            {
+                "id": 10174,
+                "label": "持股:0.3807",
+                "from": 140,
+                "to": 77
+            },
+            {
+                "id": 10175,
+                "label": "持股:0.0473",
+                "from": 141,
+                "to": 77
+            },
+            {
+                "id": 10176,
+                "label": "持股:0.0136",
+                "from": 142,
+                "to": 35
+            },
+            {
+                "id": 10177,
+                "label": "持股:1.0",
+                "from": 143,
+                "to": 142
+            },
+            {
+                "id": 10178,
+                "label": "持股:1.0",
+                "from": 144,
+                "to": 143
+            },
+            {
+                "id": 10179,
+                "label": "持股:0.2157",
+                "from": 17,
+                "to": 35
+            },
+            {
+                "id": 10180,
+                "label": "持股:0.1818",
+                "from": 145,
+                "to": 35
+            },
+            {
+                "id": 10181,
+                "label": "持股:1.0",
+                "from": 146,
+                "to": 145
+            },
+            {
+                "id": 10182,
+                "label": "持股:1.0",
+                "from": 147,
+                "to": 146
+            },
+            {
+                "id": 10183,
+                "label": "持股:0.0322",
+                "from": 148,
+                "to": 35
+            },
+            {
+                "id": 10184,
+                "label": "持股:1.0",
+                "from": 16,
+                "to": 148
+            },
+            {
+                "id": 10185,
+                "label": "持股:0.0415",
+                "from": 31,
+                "to": 35
+            },
+            {
+                "id": 10186,
+                "label": "持股:1.0",
+                "from": 149,
+                "to": 36
+            },
+            {
+                "id": 10187,
+                "label": "持股:0.3",
+                "from": 150,
+                "to": 37
+            },
+            {
+                "id": 10188,
+                "label": "持股:0.4",
+                "from": 151,
+                "to": 37
+            },
+            {
+                "id": 10189,
+                "label": "持股:0.3",
+                "from": 152,
+                "to": 37
+            },
+            {
+                "id": 10190,
+                "label": "持股:1.0",
+                "from": 153,
+                "to": 38
+            },
+            {
+                "id": 10191,
+                "label": "持股:0.3567",
+                "from": 20,
+                "to": 153
+            },
+            {
+                "id": 10192,
+                "label": "持股:0.6433",
+                "from": 124,
+                "to": 153
+            },
+            {
+                "id": 10193,
+                "label": "持股:1.0",
+                "from": 154,
+                "to": 40
+            },
+            {
+                "id": 10194,
+                "label": "持股:0.0",
+                "from": 155,
+                "to": 41
+            },
+            {
+                "id": 10195,
+                "label": "持股:1.0",
+                "from": 154,
+                "to": 155
+            },
+            {
+                "id": 10196,
+                "label": "持股:0.0",
+                "from": 156,
+                "to": 41
+            },
+            {
+                "id": 10197,
+                "label": "持股:1.0",
+                "from": 157,
+                "to": 43
+            },
+            {
+                "id": 10198,
+                "label": "持股:1.0",
+                "from": 158,
+                "to": 157
+            },
+            {
+                "id": 10199,
+                "label": "持股:1.0",
+                "from": 136,
+                "to": 44
+            },
+            {
+                "id": 10200,
+                "label": "持股:1.0",
+                "from": 5,
+                "to": 136
+            },
+            {
+                "id": 10201,
+                "label": "持股:1.0",
+                "from": 159,
+                "to": 45
+            },
+            {
+                "id": 10202,
+                "label": "持股:0.0069",
+                "from": 160,
+                "to": 46
+            },
+            {
+                "id": 10203,
+                "label": "持股:0.89",
+                "from": 161,
+                "to": 160
+            },
+            {
+                "id": 10204,
+                "label": "持股:0.046",
+                "from": 162,
+                "to": 160
+            },
+            {
+                "id": 10205,
+                "label": "持股:0.064",
+                "from": 163,
+                "to": 160
+            },
+            {
+                "id": 10206,
+                "label": "持股:0.0069",
+                "from": 164,
+                "to": 46
+            },
+            {
+                "id": 10207,
+                "label": "持股:0.0269",
+                "from": 165,
+                "to": 164
+            },
+            {
+                "id": 10208,
+                "label": "持股:0.51",
+                "from": 166,
+                "to": 165
+            },
+            {
+                "id": 10209,
+                "label": "持股:0.44",
+                "from": 167,
+                "to": 165
+            },
+            {
+                "id": 10210,
+                "label": "持股:0.05",
+                "from": 168,
+                "to": 165
+            },
+            {
+                "id": 10211,
+                "label": "持股:0.0636",
+                "from": 169,
+                "to": 164
+            },
+            {
+                "id": 10212,
+                "label": "持股:0.2",
+                "from": 170,
+                "to": 169
+            },
+            {
+                "id": 10213,
+                "label": "持股:0.2",
+                "from": 171,
+                "to": 169
+            },
+            {
+                "id": 10214,
+                "label": "持股:0.4",
+                "from": 172,
+                "to": 169
+            },
+            {
+                "id": 10215,
+                "label": "持股:0.2",
+                "from": 173,
+                "to": 169
+            },
+            {
+                "id": 10216,
+                "label": "持股:0.0424",
+                "from": 174,
+                "to": 164
+            },
+            {
+                "id": 10217,
+                "label": "持股:0.275",
+                "from": 175,
+                "to": 174
+            },
+            {
+                "id": 10218,
+                "label": "持股:0.625",
+                "from": 176,
+                "to": 174
+            },
+            {
+                "id": 10219,
+                "label": "持股:0.1",
+                "from": 177,
+                "to": 174
+            },
+            {
+                "id": 10220,
+                "label": "持股:0.0501",
+                "from": 178,
+                "to": 164
+            },
+            {
+                "id": 10221,
+                "label": "持股:0.0866",
+                "from": 179,
+                "to": 164
+            },
+            {
+                "id": 10222,
+                "label": "持股:1.0",
+                "from": 180,
+                "to": 179
+            },
+            {
+                "id": 10223,
+                "label": "持股:0.0153",
+                "from": 181,
+                "to": 164
+            },
+            {
+                "id": 10224,
+                "label": "持股:0.0288",
+                "from": 182,
+                "to": 164
+            },
+            {
+                "id": 10225,
+                "label": "持股:1.0",
+                "from": 183,
+                "to": 182
+            },
+            {
+                "id": 10226,
+                "label": "持股:0.5778",
+                "from": 184,
+                "to": 164
+            },
+            {
+                "id": 10227,
+                "label": "持股:1.0",
+                "from": 185,
+                "to": 184
+            },
+            {
+                "id": 10228,
+                "label": "持股:0.0212",
+                "from": 186,
+                "to": 164
+            },
+            {
+                "id": 10229,
+                "label": "持股:0.8306",
+                "from": 127,
+                "to": 186
+            },
+            {
+                "id": 10230,
+                "label": "持股:0.1661",
+                "from": 187,
+                "to": 186
+            },
+            {
+                "id": 10231,
+                "label": "持股:0.0033",
+                "from": 188,
+                "to": 186
+            },
+            {
+                "id": 10232,
+                "label": "持股:0.0307",
+                "from": 189,
+                "to": 164
+            },
+            {
+                "id": 10233,
+                "label": "持股:0.75",
+                "from": 190,
+                "to": 189
+            },
+            {
+                "id": 10234,
+                "label": "持股:0.05",
+                "from": 191,
+                "to": 189
+            },
+            {
+                "id": 10235,
+                "label": "持股:0.2",
+                "from": 192,
+                "to": 189
+            },
+            {
+                "id": 10236,
+                "label": "持股:0.7801",
+                "from": 193,
+                "to": 46
+            },
+            {
+                "id": 10237,
+                "label": "持股:0.02",
+                "from": 194,
+                "to": 193
+            },
+            {
+                "id": 10238,
+                "label": "持股:0.97",
+                "from": 195,
+                "to": 193
+            },
+            {
+                "id": 10239,
+                "label": "持股:0.01",
+                "from": 196,
+                "to": 193
+            },
+            {
+                "id": 10240,
+                "label": "持股:1.0",
+                "from": 197,
+                "to": 196
+            },
+            {
+                "id": 10241,
+                "label": "持股:0.0069",
+                "from": 198,
+                "to": 46
+            },
+            {
+                "id": 10242,
+                "label": "持股:0.3157",
+                "from": 199,
+                "to": 198
+            },
+            {
+                "id": 10243,
+                "label": "持股:1.0",
+                "from": 200,
+                "to": 199
+            },
+            {
+                "id": 10244,
+                "label": "持股:0.2",
+                "from": 201,
+                "to": 198
+            },
+            {
+                "id": 10245,
+                "label": "持股:0.2997",
+                "from": 33,
+                "to": 198
+            },
+            {
+                "id": 10246,
+                "label": "持股:0.1375",
+                "from": 52,
+                "to": 46
+            },
+            {
+                "id": 10247,
+                "label": "持股:1.0",
+                "from": 202,
+                "to": 52
+            },
+            {
+                "id": 10248,
+                "label": "持股:0.99",
+                "from": 203,
+                "to": 202
+            },
+            {
+                "id": 10249,
+                "label": "持股:0.01",
+                "from": 204,
+                "to": 202
+            },
+            {
+                "id": 10250,
+                "label": "持股:0.0619",
+                "from": 205,
+                "to": 46
+            },
+            {
+                "id": 10251,
+                "label": "持股:0.3",
+                "from": 206,
+                "to": 47
+            },
+            {
+                "id": 10252,
+                "label": "持股:0.49",
+                "from": 207,
+                "to": 206
+            },
+            {
+                "id": 10253,
+                "label": "持股:0.51",
+                "from": 208,
+                "to": 206
+            },
+            {
+                "id": 10254,
+                "label": "持股:0.4",
+                "from": 209,
+                "to": 47
+            },
+            {
+                "id": 10255,
+                "label": "持股:0.3",
+                "from": 210,
+                "to": 47
+            },
+            {
+                "id": 10256,
+                "label": "持股:0.8",
+                "from": 206,
+                "to": 210
+            },
+            {
+                "id": 10257,
+                "label": "持股:0.2",
+                "from": 208,
+                "to": 210
+            },
+            {
+                "id": 10258,
+                "label": "持股:0.7249",
+                "from": 23,
+                "to": 48
+            },
+            {
+                "id": 10259,
+                "label": "持股:0.2751",
+                "from": 24,
+                "to": 48
+            },
+            {
+                "id": 10260,
+                "label": "持股:0.3247",
+                "from": 211,
+                "to": 49
+            },
+            {
+                "id": 10261,
+                "label": "持股:0.3247",
+                "from": 212,
+                "to": 49
+            },
+            {
+                "id": 10262,
+                "label": "持股:1.0",
+                "from": 213,
+                "to": 212
+            },
+            {
+                "id": 10263,
+                "label": "持股:1.0",
+                "from": 214,
+                "to": 213
+            },
+            {
+                "id": 10264,
+                "label": "持股:0.3506",
+                "from": 215,
+                "to": 49
+            },
+            {
+                "id": 10265,
+                "label": "持股:1.0",
+                "from": 214,
+                "to": 215
+            },
+            {
+                "id": 10266,
+                "label": "持股:0.3",
+                "from": 216,
+                "to": 50
+            },
+            {
+                "id": 10267,
+                "label": "持股:0.15",
+                "from": 217,
+                "to": 216
+            },
+            {
+                "id": 10268,
+                "label": "持股:0.55",
+                "from": 218,
+                "to": 216
+            },
+            {
+                "id": 10269,
+                "label": "持股:0.0859",
+                "from": 127,
+                "to": 218
+            },
+            {
+                "id": 10270,
+                "label": "持股:0.6003",
+                "from": 219,
+                "to": 218
+            },
+            {
+                "id": 10271,
+                "label": "持股:0.2729",
+                "from": 140,
+                "to": 218
+            },
+            {
+                "id": 10272,
+                "label": "持股:0.1",
+                "from": 220,
+                "to": 216
+            },
+            {
+                "id": 10273,
+                "label": "持股:0.8148",
+                "from": 221,
+                "to": 220
+            },
+            {
+                "id": 10274,
+                "label": "持股:0.1852",
+                "from": 222,
+                "to": 220
+            },
+            {
+                "id": 10275,
+                "label": "持股:0.06",
+                "from": 223,
+                "to": 216
+            },
+            {
+                "id": 10276,
+                "label": "持股:0.14",
+                "from": 196,
+                "to": 216
+            },
+            {
+                "id": 10277,
+                "label": "持股:0.4",
+                "from": 218,
+                "to": 50
+            },
+            {
+                "id": 10278,
+                "label": "持股:0.3",
+                "from": 224,
+                "to": 50
+            },
+            {
+                "id": 10279,
+                "label": "持股:0.6929",
+                "from": 225,
+                "to": 51
+            },
+            {
+                "id": 10280,
+                "label": "持股:0.3071",
+                "from": 226,
+                "to": 51
+            },
+            {
+                "id": 10281,
+                "label": "持股:0.1679",
+                "from": 227,
+                "to": 55
+            },
+            {
+                "id": 10282,
+                "label": "持股:0.4918",
+                "from": 219,
+                "to": 55
+            },
+            {
+                "id": 10283,
+                "label": "持股:0.293",
+                "from": 140,
+                "to": 55
+            },
+            {
+                "id": 10284,
+                "label": "持股:0.0473",
+                "from": 141,
+                "to": 55
+            },
+            {
+                "id": 10285,
+                "label": "持股:0.3048",
+                "from": 228,
+                "to": 57
+            },
+            {
+                "id": 10286,
+                "label": "持股:0.6952",
+                "from": 229,
+                "to": 57
+            },
+            {
+                "id": 10287,
+                "label": "持股:1.0",
+                "from": 230,
+                "to": 58
+            },
+            {
+                "id": 10288,
+                "label": "持股:1.0",
+                "from": 231,
+                "to": 230
+            },
+            {
+                "id": 10289,
+                "label": "持股:1.0",
+                "from": 197,
+                "to": 231
+            },
+            {
+                "id": 10290,
+                "label": "持股:1.0",
+                "from": 232,
+                "to": 59
+            },
+            {
+                "id": 10291,
+                "label": "持股:1.0",
+                "from": 9,
+                "to": 60
+            },
+            {
+                "id": 10292,
+                "label": "持股:1.0",
+                "from": 233,
+                "to": 61
+            },
+            {
+                "id": 10293,
+                "label": "持股:1.0",
+                "from": 234,
+                "to": 233
+            },
+            {
+                "id": 10294,
+                "label": "持股:1.0",
+                "from": 197,
+                "to": 62
+            },
+            {
+                "id": 10295,
+                "label": "持股:0.205",
+                "from": 31,
+                "to": 54
+            },
+            {
+                "id": 10296,
+                "label": "持股:0.0389",
+                "from": 54,
+                "to": 1
+            },
+            {
+                "id": 10297,
+                "label": "持股:1.0",
+                "from": 65,
+                "to": 66
+            },
+            {
+                "id": 10298,
+                "label": "持股:1.0",
+                "from": 235,
+                "to": 67
+            },
+            {
+                "id": 10299,
+                "label": "持股:1.0",
+                "from": 65,
+                "to": 235
+            },
+            {
+                "id": 10300,
+                "label": "持股:1.0",
+                "from": 236,
+                "to": 71
+            },
+            {
+                "id": 10301,
+                "label": "持股:1.0",
+                "from": 5,
+                "to": 72
+            },
+            {
+                "id": 10302,
+                "label": "持股:0.0687",
+                "from": 9,
+                "to": 75
+            },
+            {
+                "id": 10303,
+                "label": "持股:0.4086",
+                "from": 21,
+                "to": 75
+            },
+            {
+                "id": 10304,
+                "label": "持股:0.0779",
+                "from": 8,
+                "to": 75
+            },
+            {
+                "id": 10305,
+                "label": "持股:0.4756",
+                "from": 237,
+                "to": 75
+            },
+            {
+                "id": 10306,
+                "label": "持股:1.0",
+                "from": 9,
+                "to": 237
+            },
+            {
+                "id": 10307,
+                "label": "持股:0.175",
+                "from": 238,
+                "to": 76
+            },
+            {
+                "id": 10308,
+                "label": "持股:0.4",
+                "from": 239,
+                "to": 238
+            },
+            {
+                "id": 10309,
+                "label": "持股:0.45",
+                "from": 240,
+                "to": 238
+            },
+            {
+                "id": 10310,
+                "label": "持股:0.2",
+                "from": 241,
+                "to": 240
+            },
+            {
+                "id": 10311,
+                "label": "持股:0.5",
+                "from": 239,
+                "to": 240
+            },
+            {
+                "id": 10312,
+                "label": "持股:0.2",
+                "from": 242,
+                "to": 240
+            },
+            {
+                "id": 10313,
+                "label": "持股:0.1",
+                "from": 243,
+                "to": 240
+            },
+            {
+                "id": 10314,
+                "label": "持股:0.06",
+                "from": 242,
+                "to": 238
+            },
+            {
+                "id": 10315,
+                "label": "持股:0.09",
+                "from": 244,
+                "to": 238
+            },
+            {
+                "id": 10316,
+                "label": "持股:0.25",
+                "from": 245,
+                "to": 76
+            },
+            {
+                "id": 10317,
+                "label": "持股:0.245",
+                "from": 246,
+                "to": 76
+            },
+            {
+                "id": 10318,
+                "label": "持股:0.23",
+                "from": 247,
+                "to": 76
+            },
+            {
+                "id": 10319,
+                "label": "持股:0.75",
+                "from": 239,
+                "to": 247
+            },
+            {
+                "id": 10320,
+                "label": "持股:0.15",
+                "from": 248,
+                "to": 247
+            },
+            {
+                "id": 10321,
+                "label": "持股:0.1",
+                "from": 242,
+                "to": 247
+            },
+            {
+                "id": 10322,
+                "label": "持股:0.205",
+                "from": 31,
+                "to": 73
+            },
+            {
+                "id": 10323,
+                "label": "持股:0.049",
+                "from": 73,
+                "to": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>实时舆情监测分析系统</title>
+  <link rel="stylesheet" href={% static "src/css/layui.css"%}>
+  <script src={% static "src/echarts.min.js"%}></script>
+  <script src={% static "src/jquery-3.5.1.min.js"%}></script>
+  <script src={% static "src/layui.js"%}></script>
+    <link rel="stylesheet" type="text/css" href={% static "yujing/reset.css"%}>
+    <link rel="stylesheet" type="text/css" href={% static "yujing/scanboard.css"%}>
+    <link rel="stylesheet" type="text/css" href={% static "yujing/animsition.css"%}>
+    <link rel="stylesheet" type="text/css" href={% static "yujing/jquery.shCircleLoader.css"%}>
+    <script type="text/javascript" src={% static "yujing/jquery.min.js.下载"%}></script>
+    <script type="text/javascript" src={% static "yujing/jquery.shCircleLoader-min.js.下载"%}></script>
+    <style id="shcl1" type="text/css">@-o-keyframes shcl1_bounce{0%{visibility:visible;-o-transform:scale(1)}80%{-o-transform:scale(.3)}100%{-o-transform:scale(1)}}@-ms-keyframes shcl1_bounce{0%{visibility:visible;-ms-transform:scale(1)}80%{-ms-transform:scale(.3)}100%{-ms-transform:scale(1)}}@-webkit-keyframes shcl1_bounce{0%{visibility:visible;-webkit-transform:scale(1)}80%{-webkit-transform:scale(.3)}100%{-webkit-transform:scale(1)}}@-moz-keyframes shcl1_bounce{0%{visibility:visible;-moz-transform:scale(1)}80%{-moz-transform:scale(.3)}100%{-moz-transform:scale(1)}}@keyframes shcl1_bounce{0%{visibility:visible;transform:scale(1)}80%{transform:scale(.3)}100%{transform:scale(1)}}</style><style type="text/css">.amap-container{cursor:url(http://webapi.amap.com/theme/v1.3/openhand.cur),default;}.amap-drag{cursor:url(http://webapi.amap.com/theme/v1.3/closedhand.cur),default;}</style></head>
+    <style type="text/css">
+        ul,li{margin:0;padding:0}
+        #scrollDiv{height: 400px;min-height:25px;line-height:25px;overflow:hidden}
+        #scrollDiv li{height:25px;padding-left:10px;}
+    </style>
+    <script type="text/javascript" src="http://www.100sucai.com/js/jquery.js"></script>
+    <script type="text/javascript">
+    //滚动插件
+        (function($){
+        $.fn.extend({
+                Scroll:function(opt,callback){
+                        //参数初始化
+                        if(!opt) var opt={};
+                        var _this=this.eq(0).find("ul:first");
+                        var        lineH=_this.find("li:first").find('span:first').height(), //获取行高
+                                line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10), //每次滚动的行数，默认为一屏，即父容器高度
+                                speed=opt.speed?parseInt(opt.speed,10):500, //卷动速度，数值越大，速度越慢（毫秒）
+                                timer=opt.timer?parseInt(opt.timer,10):5000; //滚动的时间间隔（毫秒）
+                    console.log(">>>>>>>lineH:",lineH)
+                    console.log(">>>>>>>line:",line)
+                    console.log(">>>>>>>this.height:",_this.find("li:first").find('span:first').height())
+                        if(line==0) line=1;
+                        var upHeight=0-line*lineH;
+                        //滚动函数
+                        scrollUp=function(){
+                                _this.animate({
+                                        marginTop:upHeight
+                                },speed,function(){
+                                        for(i=1;i<=line;i++){
+                                                _this.find("li:first").appendTo(_this);
+                                        }
+                                        _this.css({marginTop:0});
+                                });
+                        }
+                        //鼠标事件绑定
+                        _this.hover(function(){
+                                clearInterval(timerID);
+                        },function(){
+                                timerID=setInterval("scrollUp()",timer);
+                        }).mouseout();
+                }
+        })
+        })(jQuery);
+
+        $(document).ready(function(){
+                $("#scrollDiv").Scroll({line:1,speed:1000,timer:-5000});
+        });
+    </script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo"><a href="/" class="layui-logo">实时舆情监测分析系统</a></div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+{#      <li class="layui-nav-item"><a href="">舆情监测</a></li>#}
+{#      <li class="layui-nav-item"><a href="">国际热点</a></li>#}
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+{#          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">#}
+          管理员
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退出</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+{#        <li class="layui-nav-item"><a class="layui-nav" href={% url 'index:redian' %}>实时热点</a></li>#}
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">舆情监测</a>
+          <dl class="layui-nav-child">
+            <dd><a href="{% url 'index:yuqing' %}">舆情风险</a></dd>
+              <dd><a href="{% url 'index:ciyun' %}">舆情词云</a></dd>
+{#            <dd><a href="{% url 'index:chaxun' %}">企业查询</a></dd>#}
+{#            <dd><a href="{% url 'index:jrjg' %}">金融机构</a></dd>#}
+{#            <dd><a href="{% url 'index:guquan' %}">股权穿透</a></dd>#}
+{##}
+{#            <dd><a href="{% url 'index:gnavigator' %}">企业关联发现</a></dd>#}
+{#            <dd><a href="{% url 'index:grelfinder' %}">企业关联查询</a></dd>#}
+          </dl>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+
+	<div id="loader" style="display: none;"><div class="shcl" style="position: relative; width: 78px; height: 78px; margin-left: 1px; margin-top: 1px;"><div style="left: 32px; top: 0px; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 48px; top: 4px; animation-delay: 0.0833333s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 60px; top: 16px; animation-delay: 0.166667s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 64px; top: 32px; animation-delay: 0.25s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 60px; top: 48px; animation-delay: 0.333333s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 48px; top: 60px; animation-delay: 0.416667s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 32px; top: 64px; animation-delay: 0.5s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 16px; top: 60px; animation-delay: 0.583333s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 4px; top: 48px; animation-delay: 0.666667s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 0px; top: 32px; animation-delay: 0.75s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 4px; top: 16px; animation-delay: 0.833333s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div><div style="left: 16px; top: 4px; animation-delay: 0.916667s; position: absolute; visibility: hidden; width: 15px; height: 15px; background: rgb(0, 222, 255); border-radius: 8px; animation-name: shcl1_bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: normal;"></div></div></div>
+	<script type="text/javascript">
+		$('#loader').shCircleLoader({color: "#00deff"});
+	</script>
+	<!--Top Start!-->
+	<div class="scanboardWp animsition" style="animation-duration: 0.3s; opacity: 1;overflow-y: scroll">
+		<div id="top">
+			<div class="wp clearfix">
+				<div class="left pageTit">
+					<a  href="javascript:;">金融舆情预警</a>
+				</div>
+{#				<div class="center topLogo">#}
+{#					<a href="{% url 'index:index' %}"><img src={% static "logo1.jpg"%}></a>#}
+{#				</div>#}
+				<div class="right topBar">
+					<div class="topTime">2021-01-25&nbsp;&nbsp;星期一&nbsp;&nbsp;16:08:40</div>
+					<div class="clearfix">
+{#						<a href="javascript:;" class="signOut fr">退出</a>#}
+{#						<div class="company fr">#}
+{#							<h3>武汉大学</h3>#}
+{#						</div>#}
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Top End!-->
+
+		<!--Main Start!-->
+		<div id="main" class="wp clearfix">
+			<div class="left" style="width: 25%">
+				<!--今日运单数量-->
+				<div class="item waybill">
+					<div class="itemTit">
+						<span class="border-yellow">热点排行</span>
+					</div>
+					<div class="itemCon itembg">
+{#						<div class="progress" progress="15%">#}
+{#							<h3 class="clearfix"><span>临时单</span><i class="color-yellow">15单</i></h3>#}
+{#							<div class="progressBar">#}
+{#								<span class="bg-yellow" style="width: 15%;"></span>#}
+{#							</div>#}
+{#							<h4>15%</h4>#}
+{#						</div>#}
+{#						<div class="progress" progress="5%">#}
+{#							<h3 class="clearfix"><span>异常单</span><i class="color-red">5单</i></h3>#}
+{#							<div class="progressBar">#}
+{#								<span class="bg-red" style="width: 5%;"></span>#}
+{#							</div>#}
+{#							<h4>5%</h4>#}
+{#						</div>#}
+{#                        <h3 class="clearfix"><span style="color: white">我曾经跨过山河大海</span></h3>#}
+                        {% for item in left_datas %}
+                            <div class="progress" progress="80">
+{#                                <h3 class="clearfix"><span>{{item.4}}</span><i class="color-blue">{{item.1}}题</i></h3>#}
+                                <h3 class="clearfix"><a style="color: white" href="{{ item.subweb_link }}" target="_blank">{{ item.title}}</a></h3>
+
+						    </div>
+                        {% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="center" style="width: 50%">
+				<!--总计运单数-->
+				<div class="item total itembg">
+					<div class="itemTit">
+						<span class="border-yellow">今日预警次数</span>
+					</div>
+					<div class="itemCon">
+						<div class="totalNum"><strong id="totalNum" total="12">20</strong><span>次</span></div>
+					</div>
+				</div>
+
+				<!--基本信息-->
+				<div class="item basicInfo">
+					<div class="itemTit">
+						<span class="border-green">预警企业</span>
+					</div>
+					<div class="itemCon itembg">
+						<div class="infoPie">
+							<ul class="clearfix">
+								<li class="color-red">
+									<p>蚂蚁金服</p>
+									<p>5次</p>
+								</li>
+								<li class="color-red">
+									<p>顺丰</p>
+									<p>3次</p>
+								</li>
+                                <li class="color-red">
+									<p>心动公司</p>
+									<p>3次</p>
+								</li>
+{#                                <li class="color-red">#}
+{#									<span class="border-red" id="indicator1" >攻击</span>#}
+{#									<p>3次</p>#}
+{#								</li>#}
+								<li class="color-yellow">
+                                    <p>腾讯音乐</p>
+									<p>2次</p>
+								</li>
+                                <li class="color-yellow">
+                                    <p>达达</p>
+									<p>2次</p>
+								</li>
+{#								<li class="color-blue">#}
+{#									<span class="border-blue" id="indicator3" >南海</span>#}
+{#									<p>2次</p>#}
+{#								</li>#}
+								<li class="color-green">
+									<p>阿莱德</p>
+									<p>2次</p>
+								</li>
+
+
+							</ul>
+							<div id="indicatorContainer"></div>
+						</div>
+					</div>
+				</div>
+
+				<!--运单状态-->
+				<div class="item billState">
+					<div class="itemTit">
+						<span class="border-green">实时热点</span>
+					</div>
+					<div class="itemCon">
+						<div class="StateBox">
+							<div class="StateTit">
+								<span style="width: 80%">标题</span>
+								<span style="width: 20%">来源</span>
+{#								<span>正文</span>#}
+							</div>
+{#							<div id="FontScroll">#}
+                            <div id="scrollDiv">
+								<ul class="line" style="margin-top: -190px;">
+                                    {% for item in center_datas %}
+                                        <li>
+                                            <div class="fontInner clearfix">
+                                                <span style="width: 80%"><a style="color: white" href="{{ item.subweb_link }}" target="_blank">{{ item.title}}</a></span>
+                                                <span style="width: 20%">{{ item.mainweb }}</span>
+{#                                                <span>{{ item.content }}</span>#}
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+                <div class="item waybill">
+					<div class="itemTit">
+						<span class="border-yellow">敏感信息</span>
+					</div>
+					<div class="itemCon itembg">
+                        <div class="progress">
+                            <h3 class="clearfix"><a style="color: white" href="https://finance.sina.com.cn/stock/observe/2021-04-14/doc-ikmyaawa9610654.shtml" target="_blank">美团再因不正当竞争败诉饿了么，否认巨款转仓原由</a></h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="clearfix"><a style="color: white" href="https://finance.sina.com.cn/stock/observe/2021-04-12/doc-ikmyaawa9301247.shtml" target="_blank">顺丰业绩爆雷市值蒸发670亿，王卫致歉</a></h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="clearfix"><a style="color: white" href="https://finance.sina.com.cn/xinjingji/2021-03-29/doc-ikknscsk3444385.shtml" target="_blank">腾讯音乐2日市值蒸发2400亿，与华纳建厂牌能否创新变现模式？</a></h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="clearfix"><a style="color: white" href="https://finance.sina.com.cn/stock/observe/2021-04-12/doc-ikmyaawa9301247.shtml" target="_blank">顺丰业绩爆雷市值蒸发670亿</a></h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="clearfix"><a style="color: white" href="https://finance.sina.com.cn/china/2021-04-07/doc-ikmyaawa8393362.shtml" target="_blank">深析|心动公司净利大跌97%</a></h3>
+                        </div>
+                        <div class="progress">
+                            <h3 class="clearfix"><a style="color: white" href="https://finance.sina.com.cn/china/2021-04-10/doc-ikmyaawa8810500.shtml" target="_blank">阿莱德冲IPO：营收高度依赖爱立信和诺基亚</a></h3>
+                        </div>
+                        {% for item in right_datas %}
+                            <div class="progress">
+                                <h3 class="clearfix"><a style="color: white" href="{{ item.subweb_link }}" target="_blank">{{ item.title}}</a></h3>
+						    </div>
+                        {% endfor %}
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--Main End!-->
+	</div>
+<canvas id="canvas" style="position: fixed;top: 0;left: 0;" width="1536" height="1666"></canvas>
+
+
+<script type="text/javascript" src={% static "yujing/bg.js.下载"%}></script>
+<script type="text/javascript" src={% static "yujing/scanboard.js.下载"%}></script>
+<script type="text/javascript" src={% static "yujing/fontscroll.js.下载"%}></script>
+<script type="text/javascript" src={% static "yujing/jquery.animsition.js.下载"%}></script>
+<script type="text/javascript" src={% static "yujing/jquery.nicescroll.js.下载"%}></script>
+<script type="text/javascript" src={% static "yujing/echarts.min.js.下载"%}></script>
+<script type="text/javascript" src={% static "yujing/maps"%}></script><script crossorigin="anonymous" id="amap_plus_js" src={% static "yujing/modules"%} type="text/javascript"></script>
+
+
+  </div>
+
+<div class="layui-footer" style="z-index:999">
+    <!-- 底部固定区域 -->
+    ©   私有数据受到法律保护，严禁爬取
+  </div>
+
+
+
+
+
+
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+});
+</script>
+
+<script type="text/javascript">
+    {% block script %}{% endblock script %}
+</script>
+
+</body>
+
+</html>

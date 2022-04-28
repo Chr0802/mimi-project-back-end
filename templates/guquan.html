@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>金融大数据分析系统</title>
+
+  <script src={% static "src/layui.js"%}></script>
+  <script src={% static "src/echarts.min.js"%}></script>
+  <script src={% static "src/jquery-3.5.1.min.js"%}></script>
+     <script type="text/javascript" src={% static "interactive-graph-0.1.0/interactive-graph.min.js" %}></script>
+    <link type="text/css" rel="stylesheet" href={% static "interactive-graph-0.1.0/interactive-graph.min.css" %}>
+      <link rel="stylesheet" href={% static "src/css/layui.css"%}>
+    <script src={% static "jquery-3.2.1/jquery-3.2.1.min.js" %}></script>
+    <script src={% static "jquery-3.2.1/jquery-ui.js" %}></script>
+    <link rel="stylesheet" href={% static "jquery-3.2.1/jquery-ui.css" %}>
+    <link href={% static "font-awesome-4.7.0/css/font-awesome.min.css"  %} rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        #graphArea {
+            height: 100%;
+            border: 1px solid lightgray;
+        }
+        ol li,ul li,ul,dl dd{
+            margin: 0!important;
+            margin-top: 0!important;
+        }
+    </style>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo"><a href="/" class="layui-logo">金融大数据分析系统</a></div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+{#      <li class="layui-nav-item"><a href="">舆情监测</a></li>#}
+{#      <li class="layui-nav-item"><a href="">国际热点</a></li>#}
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+
+          管理员
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退出</a></li>
+    </ul>
+  </div>
+
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+{#        <li class="layui-nav-item layui-nav-itemed">#}
+{#          <a class="" href="javascript:;">所有商品</a>#}
+{#          <dl class="layui-nav-child">#}
+{#            <dd><a href="javascript:;">列表一</a></dd>#}
+{#            <dd><a href="javascript:;">列表二</a></dd>#}
+{#            <dd><a href="javascript:;">列表三</a></dd>#}
+{#            <dd><a href="">超链接</a></dd>#}
+{#          </dl>#}
+{#        </li>#}
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">金融风控</a>
+          <dl class="layui-nav-child">
+            <dd><a href="{% url 'index:yuqing' %}">舆情风险</a></dd>
+            <dd><a href="{% url 'index:chaxun' %}">企业查询</a></dd>
+            <dd><a href="{% url 'index:jrjg' %}">金融机构</a></dd>
+            <dd><a href="{% url 'index:guquan' %}">股权穿透</a></dd>
+
+            <dd><a href="{% url 'index:gnavigator' %}">企业关联发现</a></dd>
+            <dd><a href="{% url 'index:grelfinder' %}">企业关联查询</a></dd>
+          </dl>
+        </li>
+{#        <li class="layui-nav-item"><a class="layui-nav" href={% url 'index:redian' %}>实时热点</a></li>#}
+{#        <li class="layui-nav-item"><a class="layui-nav"  href={% url 'index:ciyun' %}>热点词云</a></li>#}
+{#        <li class="layui-nav-item"><a class="layui-nav" href={% url 'index:yuqing' %}>舆情预警</a></li>#}
+{#        <li class="layui-nav-item"><a class="layui-nav" href={% url 'index:shejiao' %}>社交网络</a></li>#}
+{#          <li class="layui-nav-item"><a class="layui-nav" href=''>敏感词监控</a></li>#}
+{#          <li class="layui-nav-item"><a class="layui-nav" href=''>政策跟踪</a></li>#}
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <form class="layui-form" action="">
+      <div class="layui-form-item center-in-center" style="width: 80%">
+        <div class="layui-input-block" style="display: inline-block;width:60%;margin-left: 0px">
+{#            <div class="layui-row"> <h1 style="margin-left: 25%;">企业股权穿透查询</h1></div>#}
+            <br/>
+            <input type="text" name="wd" required  lay-verify="required" placeholder="请输入企业名" autocomplete="off" class="layui-input" >
+        </div>
+        <div class="layui-input-block" style="display: inline-block;width:10%;margin-left: 0px">
+{#            <div class="layui-row"> <h1 style="margin-left: 25%;">企业股权穿透查询</h1></div>#}
+            <br/>
+            <input type="text" name="ceng" required  lay-verify="required" placeholder="穿透层数" autocomplete="off" class="layui-input" >
+        </div>
+        <div class="layui-input-block" style="display: inline-block">
+          <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+          <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+      </div>
+    </form>
+
+    <div style="height:90%">
+        <div id="graphArea"></div>
+    </div>
+    <!--all UI controls-->
+    <div>
+        <!--toolbar-->
+        <div class="toolbarPanel igraph-dockable igraph-draggable" igraph-control-role="ToolbarCtrl"
+            igraph-dock-position="B:-6,0">
+            <div class="toolbar"></div>
+        </div>
+        <!--info box-->
+        <div class="infoPanel igraph-dockable igraph-draggable" igraph-control-role="InfoBoxCtrl" igraph-dock-position="A:10,200">
+            <div>
+                <div class="infoPanel1"></div>
+                <div class="infoPanel2"><span align="center" class="fa fa-close fa-lg btnCloseInfoPanel"></span></div>
+            </div>
+            <div class="infoBox"></div>
+        </div>
+        <!--search box-->
+        <div class="searchPanel igraph-dockable igraph-draggable" igraph-control-role="SearchBoxCtrl"
+            igraph-dock-position="A:10,20">
+            <div class="searchPanel1">
+                <input class="igraph-searchbox" type="text" size="16" placeholder="input keyword">
+            </div>
+            <div class="searchPanel2 igraph-searchbox-image">
+                <span align="center" class="fa fa-photo fa-lg" />
+            </div>
+        </div>
+        <!--status bar-->
+        <div class="statusPanel igraph-dockable" igraph-control-role="StatusBarCtrl" igraph-dock-position="C:-100,0">
+            <div class="statusBar"></div>
+        </div>
+        <!--image upload box-->
+        <div class="imageUploadPanel" igraph-control-role="ImageUploadCtrl"></div>
+        <div class="ResultListPanel igraph-dockable igraph-draggable" igraph-control-role="ResultListCtrl" igraph-dock-position="A:10,70"></div>
+    </div>
+    <script type="text/javascript">
+
+        let form_data = null
+        layui.use('form', function() {
+            var form = layui.form;
+            //监听提交
+            form.on('submit(formDemo)', function (data) {
+                layer.msg(JSON.stringify(data.field));
+                form_data = data
+                let $ = layui.jquery;
+                app.loadGson("{% url 'index:neo4j_datas' %}?wd=" + data.field.wd + "&ceng=" + data.field.ceng, {
+                    "onGetNodeDescription": function (node) {
+                        var description = "<p align=center>";
+                        if (node.image !== undefined) {
+                            description += "<img src='" + node.image + "' width=150/><br>";
+                        }
+                        description += "<b>" + node.label + "</b>" + "[" + node.id + "]";
+                        description += "</p>";
+                        if (node.info !== undefined) {
+                            description += "<p align=left>" + node.info + "</p>";
+                        } else {
+                            if (node.title !== undefined)
+                                description += "<p align=left>" + node.title + "</p>";
+                        }
+
+                        return description;
+                    }
+                }, function () {});
+                return false;
+            })
+        })
+
+        igraph.i18n.setLanguage("chs");
+        var app = new igraph.GraphNavigator(document.getElementById('graphArea'), 'LIGHT');
+        app.loadGson("{% url 'index:shzq_data' %}?wd='上海证券交易所'", {
+            "onGetNodeDescription": function (node) {
+                var description = "<p align=center>";
+                if (node.image !== undefined) {
+                    description += "<img src='" + node.image + "' width=150/><br>";
+                }
+                description += "<b>" + node.label + "</b>" + "[" + node.id + "]";
+                description += "</p>";
+                if (node.info !== undefined) {
+                    description += "<p align=left>" + node.info + "</p>";
+                } else {
+                    if (node.title !== undefined)
+                        description += "<p align=left>" + node.title + "</p>";
+                }
+
+                return description;
+            }
+        }, function () {});
+        //app.connect("http://localhost:9999/graphserver/connector-bolt");
+    </script>
+
+  </div>
+
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    ©   私有数据受到法律保护，严禁爬取
+  </div>
+</div>
+
+
+
+
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+});
+
+</script>
+
+<script type="text/javascript">
+    {% block script %}{% endblock script %}
+</script>
+
+</body>
+
+</html>
+

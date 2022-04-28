@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<table lay-filter="demo">
+{#    静态加载出数据再用js渲染静态表格，加载的时候静态表格比较难看#}
+  <thead>
+
+    <tr>
+      <th lay-data="{field:'year', width:80}">年限</th>
+      <th lay-data="{field:'code', width:100}">银行类型</th>
+      <th lay-data="{field:'B_SNAME', width:150}">银行简称</th>
+        <th lay-data="{field:'B_ENAME', width:250}">银行全称</th>
+      <th lay-data="{field:'B_HANME', width:200}">银行股东名称</th>
+      <th lay-data="{field:'B_HSHARE', width:100}">持股比例</th>
+        <th lay-data="{field:'E_EID', width:200}">工商库企业代码</th>
+      <th lay-data="{field:'H_HID'}">股东工商库代码</th>
+    </tr>
+
+  </thead>
+  <tbody>
+    {% for p in jrjgInfos %}
+    <tr>
+      <td>{{ p.year }}</td>
+      <td>{{ p.code }}</td>
+      <td>{{ p.B_SNAME }}</td>
+      <td>{{ p.B_ENAME }}</td>
+      <td>{{ p.B_HNAME }}</td>
+      <td>{{ p.B_HSHARE }}</td>
+      <td>{{ p.E_EID }}</td>
+      <td>{{ p.H_HID }}</td>
+    </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+{#  <tbody>#}
+{#    {% for p in pages.object_list %}#}
+{#    <div class="item">#}
+{#        <div class="text">#}
+{#          <p>#}
+{#              <span>{{ p.year }}</span>#}
+{#              <span>{{ p.code }}</span>#}
+{#              <span>{{ p.B_SNAME }}</span>#}
+{#              <span>{{ p.B_ENAME }}</span>#}
+{#              <span>{{ p.B_HNAME }}</span>#}
+{#              <span>{{ p.B_HSHARE }}</span>#}
+{#              <span>{{ p.E_EID }}</span>#}
+{#              <span>{{ p.H_HID }}</span>#}
+{#          </p>#}
+{#        </div>#}
+{#      </div>#}
+{#      {% endfor %}#}
+{#  </tbody>#}
+
+{% endblock content %}
+  
+{% block script %}
+    layui.use('table', function(){
+    var table = layui.table;
+{#    var layer = layui.layer;#}
+{#    var index = layer.load(1);#}
+    //转换静态表格
+    table.init('demo', {
+      height: 615 //设置高度
+{#      ,loading = true#}
+      ,limit: 20 //注意：请务必确保 limit 参数（默认：10）是与你服务端限定的数据条数一致
+      ,page: true //开启分页
+
+      //支持所有基础参数
+{#    ,done:function (res) {   //返回数据执行回调函数#}
+{#        layer.close(index);    //返回数据关闭loading#}
+{#    }#}
+    });
+    });
+{% endblock script %}
